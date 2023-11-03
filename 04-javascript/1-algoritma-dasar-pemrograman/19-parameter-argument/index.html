@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Parameter & Argument</title>
+</head>
+<body>
+    
+
+
+<script>
+// Parameter & Argument
+// function hitungAngka(a,b) {
+
+//     return a+b;
+// }
+
+// var a = parseInt(prompt('Masukkan Angka 1 :'));
+// var b = parseInt(prompt('Masukkan Angka 2 :'));
+// var result = hitungAngka(a,b);
+
+// alert(result);
+
+function hitungFungsiArguments() {
+    var result = 0;
+    for( i = 0; i < arguments.length; i++ ) {
+        result += arguments[i];
+    }
+    return result;
+}
+
+var nilai = hitungFungsiArguments(1,2,3);
+console.log(nilai);
+
+</script>
+</body>
+</html>

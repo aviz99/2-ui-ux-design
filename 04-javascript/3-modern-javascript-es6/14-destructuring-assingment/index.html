@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Destructuring Assignment</title>
+</head>
+<body>
+    
+<script>
+    // Destructuring Assignment
+    // const perkenalan = ['Halo', 'nama', 'saya', 'Ali Havizni'];
+    // const [salam, satu, dua, nama] = perkenalan;
+
+    // skip items
+    // const [salam, , , nama] = perkenalan;
+    // console.log(nama);
+
+    // swap items
+    // let a = 1;
+    // let b = 2;
+
+    // console.log(a);
+    // console.log(b);
+    // [a, b] = [b, a];
+    // console.log(a);
+    // console.log(b);
+
+    // return value pada function
+    // function coba() {
+    //     return [1, 2];
+    // }
+
+    // const [a, b] = coba();
+    // console.log(b);
+
+    // Rest Parameter
+    // const [a, ...values] = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+    // console.log(values);
+
+    // Destructuring Object
+    // const mhs = {
+    //     nama: 'Ali Havizni',
+    //     umur: 26
+    // }
+
+    // const {nama, umur} = mhs;
+    // console.log(mhs);
+
+    // Assignment tanpa deklarasi object
+    // ({nama, umur} =  { nama: 'Ali Havizni', umur: 26 });
+    // console.log(umur);
+
+    // Assign ke variabel baru
+    // const mhs = {
+    //     nama: 'Ali Havizni',
+    //     umur: 26
+    // }
+
+    // const { nama: n, umur: u } = mhs;
+    // console.log(u);
+
+    // Memberikan default value
+    // const mhs = {
+    //     nama: 'Ali Havizni',
+    //     umur: 26,
+    //     email: 'ajojingcommunitypenskleb@gmail.com'
+    // }
+
+    // const { nama, umur, email = 'ahavizni@gmail.com' } = mhs;
+    // console.log(email);
+
+
+    // Memberi nilai default + assign ke variabel baru
+    // const mhs = {
+    //     nama: 'Ali Havizni',
+    //     umur: 26,
+    //     email: 'ajojingcommunitypenskleb@gmail.com'
+    // }
+
+    // const { nama: n, umur: u, email: e = 'ahavizni@gmail.com' } = mhs;
+    // console.log(e);
+
+
+    // Rest Parameter pada object
+    // const mhs = {
+    //     nama: 'Ali Havizni',
+    //     umur: 26,
+    //     email: 'ajojingcommunitypenskleb@gmail.com'
+    // }
+
+    // const { nama, ...values } = mhs;
+    // console.log(values);
+
+
+    // Mengambil field pada object, setelah dikirim sebagai parameter untuk function
+    const mhs = {
+        id: 321,
+        nama: 'Ali Havizni',
+        umur: 26,
+        email: 'ajojingcommunitypenskleb@gmail.com'
+    }
+
+    function getPropertyObj({ id }) {
+        return id;
+    }
+
+    console.log(getPropertyObj(mhs));
+</script>
+</body>
+</html>

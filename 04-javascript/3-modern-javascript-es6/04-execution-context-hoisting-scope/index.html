@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Execution Context, Hoisting, & Scope</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    // EXECUTION CONTEXT, HOISTING , AND SCOPE
+    // console.log(name);
+    // var name = "Ali";
+
+    // creation phase pada Global Context
+    // nama var = undefined
+    // nama function = fn()
+    // hoisting
+    // window = global object
+    // this = window
+
+    // execution phase
+
+    // console.log(sayHello());
+    // var nama = "Ali";
+    // var umur = 26;
+
+    // function sayHello() {
+    //     return `Halo nama saya ${nama}, saya berusia ${umur} tahun.`
+    // }
+
+    // Function membuat execution context
+    // yang di dalamnya terdapat creation dan execution phase
+    // window
+    // arguments
+    // hoisting
+
+    // var nama = "Ali";
+    // var username = "@alihaviznii";
+
+    // function cetakUrl() {
+    //     console.log(arguments[0]);
+    //     var instagramUrl = "http://instagram.com/";
+    //     return instagramUrl + username;
+    // }
+
+    // console.log(cetakUrl("@shaniagraciajkt48"));
+
+    function satu() {
+        var nama = "Sandhika";
+        console.log(nama);
+    }
+
+    function dua() {
+        console.log(nama);
+    }
+
+    console.log(nama);
+
+    var nama = "Erik";
+    satu();
+    dua("Doddy");
+    console.log(nama);
+
+
+
+
+
+
+
+
+
+
+
+    // function a() {
+    //     console.log("ini a.")
+        
+    //     function b() {
+    //         console.log("ini b.")
+
+    //         function c() {
+    //             console.log("ini c.")
+    //         }
+    //         c();
+    //     }
+    //     b();
+    // }
+    // a();
+
+</script>
+</body>
+</html>

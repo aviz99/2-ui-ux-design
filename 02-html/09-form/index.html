@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>HTML Form</title>
+</head>
+<body>
+	<!-- Form -->
+	<!-- Untuk mengelola data pada input yang dilakukan pada user baik itu mengisikan data pada kolom, memilih sesuatu pada combo box atau dropdown menu, memilih radio button serta user sampai menekan tombol -->
+	<!-- <input> = user bisa menginputkan sesuatu -->
+	<!-- <textarea></textarea> = text yang persis dengan textfield hanya textarea lebih banyak menampung karakter -->
+	<!-- <select></select> = digunakan untuk membuat dropdown atau combo box -->
+	<!-- <button></button> = tombol buat mengirimkan data -->
+	<!-- <label></label> = menandai sebuah element input -->
+	<!-- <input type="text/password/radio/checkbox/submit/reset/button/email" name="namaSpesifik" value="nama dari button inputan"> -->
+	<!-- <label for="username/password/email/text" name="namaSpesifik"></label> -->
+	<!-- <button type="submit/reset/button"></button> -->
+	<!-- <select>
+			<option>Opsi 1</option>
+			<option>Opsi 2</option>
+			<option>Opsi 3</option>
+			<option>Opsi 4</option>
+	</select> -->
+<form>
+	<label for="username">username : </label>
+	<input type="text" id="username">
+	<br><br>
+
+	<label for="password">password : </label>
+	<input type="password" id="password">
+	<br><br>
+
+	<label>jenis kelamin : </label>
+	<input type="radio" id="pria" name="jeniskelamin"><label for="pria">pria</label>
+	<input type="radio" id="wanita" name="jeniskelamin"><label for="wanita">wanita</label>
+	<br><br>
+
+	<label>hobi : </label>
+	<input type="checkbox" id="menyanyi"><label for="menyanyi">menyanyi</label>
+	<input type="checkbox" id="gaming"><label for="gaming">gaming</label>
+	<input type="checkbox" id="basket"><label for="basket">basket</label>
+	<input type="checkbox" id="berenang"><label for="berenang">berenang</label>
+	<input type="checkbox" id="ngoding"><label for="ngoding">ngoding</label>
+	<input type="checkbox" id="memasak"><label for="memasak">memasak</label>
+	<br><br>
+
+	<textarea></textarea>
+	<br><br>
+
+	<label>kota asal : </label>
+	<select>
+		<option>Jakarta</option>
+		<option>Bandung</option>
+		<option>Tangerang</option>
+		<option>Bogor</option>
+		<option>Surabaya</option>
+		<option>Semarang</option>
+	</select>
+	<br><br>
+	
+	<button type="submit">kirim!</button>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,39 @@
+02 / 11 / 2023
+Day - 1
+DESIGN THINKING
+
+Design Thinking adalah pendekatan yang digunakan untuk pemecahan masalah yang kompleks secara praktis dan kreatif dengan cara yang sangat berpusat pada pengguna
+
+Manfaat Design Thinking
+- Memudahkan tim atau organisasi dalam bekerja
+- Penghematan biaya
+- Menghasilkan solusi lebih inovatif
+- Menyelesaikan kebutuhan manusia yang konkrit
+- Menciptakan retensi & loyalitas dari pelanggan
+
+Tahap Design Thinking
+Tahap Pertama = Empathise ( Riset kebutuhan pengguna )
+-> Tahap pertama dari proses ini dihabiskan untuk mengenal pengguna dan memahami keinginan, kebutuhan dan memahami tujuan mereka.
+-> melakukan pada fase ini: melakukan wawancara, observasi dll.
+
+Tahap Kedua = Define ( Identifikasi kebutuhan dan masalah pengguna )
+-> Pada tahap ini dilakukan pengumpulan informasi dari data yang didapat pada tahap empathise.
+-> kamu akan melakukan analisis terhadap pengamatan yang dilakukan dan mensintesisnya untuk menentukan masalah inti. pada tahap ini
+-> kamu melakukan tahap pendefinisian masalah kamu dan tim akan mengumpulkan semua temuan dari fase empathise dan mulai melakukan pemahaman.
+-> seperti kesulitan & hambatan yang dihadapi oleh pengguna, pola apa yang bisa diamati serta masalah terbesar pengguna yang perlu kamu atasi.
+
+Tahap Ketiga = Ideate ( Menciptakan & mengumpulkan ide lalu menemukan solusi )
+-> Dengan latar belakang yang kuat dari 2 fase pertama inilah saat nya untuk mulai mengerjakan solusi.
+-> Dalam fase ini, merupakan tempat kreatifitas bermunculan dan yang terpenting tahap ideate adalah fase bebas penilaian.
+-> Teknik Ideation yaitu: Brainstorming, Mindmapping & Bodystorming.
+-> setelah itu kamu bisa melakukan diskusi dengan tim untuk mempersempit nya menjadi beberapa idepenting yang dapat digunakan pada fase berikut nya.
+
+Tahap Keempat = Prototype ( Mencoba membuat solusi )
+-> Tahap ini adalah fase percobaan tujuan dari fase ini adalah mengidentifikasi solusi terbaik untuk setiap masalah yang ditemukan.
+-> kamu dan tim dapat membuat beberapa versi product yang simpel dan murah.
+-> jika ide yang dikembangkan produk aplikasi mobile, kamu dapat membuat sebuah prototype kertas sederhana yang merepresentasikan design dan fungsi dari produk.
+
+Tahap Kelima = Usability Testing ( Mencoba solusi )
+-> Setelah pembuatan prototype, dilanjutkan dengan pengujian pengguna secara ketat oleh designer atau evaluator.
+-> dari pengalaman pengguna pada fase ini, maka memungkinkan kamu dan tim melakukan evaluasi kembali untuk menghasil ide yang lebih baik.   
+  

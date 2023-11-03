@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Callback</title>
+</head>
+<body>
+    
+
+<script
+    src="https://code.jquery.com/jquery-3.7.0.min.js"
+    integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g="
+    crossorigin="anonymous"></script>
+
+<script>
+    // Callback
+    // Synchronous Callback
+    // function halo(nama) {
+    //     alert(`Halo nama saya ${nama}`);
+    // }
+
+    // function tampilkanPesan(callback) {
+    //     let nama = prompt('Masukkan nama anda :')
+    //     callback(nama);
+    // }
+
+    // tampilkanPesan(nama => alert(`Halo nama saya ${nama}`));
+
+
+    // const mhs = [
+    //     {
+    //         "nama": "Ali Havizni",
+    //         "nrp": "201631253",
+    //         "email": "ahavizni@gmail.com",
+    //         "jurusan": "Teknik Informatika",
+    //         "idDosenWali": 1
+    //     },
+
+    //     {
+    //         "nama": "Stella Hartono",
+    //         "nrp": "201611001",
+    //         "email": "stellahartono@gmail.com",
+    //         "jurusan": "Ekonomi",
+    //         "idDosenWali": 2
+    //     },
+
+    //     {
+    //         "nama": "Gabriella Sania Hartanto",
+    //         "nrp": "201612002",
+    //         "email": "gabriellashartanto@gmail.com",
+    //         "jurusan": "Kedokteran",
+    //         "idDosenWali": 3
+    //     },
+
+    //     {
+    //         "nama": "Vania Stefany Salim",
+    //         "nrp": "201613003",
+    //         "email": "vaniasalim@gmail.com",
+    //         "jurusan": "Bisnis",
+    //         "idDosenWali": 4
+    //     },
+
+    //     {
+    //         "nama": "Christy Natalie Samantha",
+    //         "nrp": "201614004",
+    //         "email": "christynsamantha@gmail.com",
+    //         "jurusan": "Hukum",
+    //         "idDosenWali": 5
+    //     }
+    // ];
+
+    // mhs.forEach(m => console.log(m.nama));
+
+
+    // Asynchronous Callback
+    // VanillaJS & AJAX
+    // function getDataDosen(url, success, error) {
+    //     let xhr = new XMLHttpRequest();
+
+    //     xhr.onreadystatechange = function() {
+    //         if ( xhr.readyState === 4 ) {
+    //             if ( xhr.status === 200 ) {
+    //                 success(xhr.response);
+    //             } else if ( xhr.status === 404 ) {
+    //                 error();
+    //             }
+    //         }
+    //     }
+
+    //     xhr.open('get', url);
+    //     xhr.send();
+    // }
+
+    // console.log('mulai');
+    // getDataDosen('data/dosen.json', results => {
+    //     const mhs = JSON.parse(results);
+    //     mhs.forEach(m => console.log(m.nama));
+    // }, e => {
+    //     console.log(e.responseText);
+    // });
+    // console.log('selesai');
+
+    // JQUERY
+    console.log('mulai');
+    $.ajax({
+        url: 'data/mahasiswa.json',
+        success: (mhs) => {
+            mhs.forEach(m => console.log(m.nama));
+        },
+        error: (e) => {
+            console.log(e.responseText);
+        }
+    });
+    console.log('selesai');
+</script>
+</body>
+</html>

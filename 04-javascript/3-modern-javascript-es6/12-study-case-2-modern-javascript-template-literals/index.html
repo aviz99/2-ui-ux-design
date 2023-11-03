@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Case 2 Javascript Lanjutan String Template</title>
+</head>
+<body>
+    
+
+<script>
+    // 1. HTML Fragment
+    // const mhs = {
+    //     name: 'Ali Havizni',
+    //     age: 26,
+    //     nrp: '201631253',
+    //     email: 'ahavzini@gmail.com'
+    // };
+
+    // const el = `<div class="mhs">
+    //     <h2>${mhs.name}</h2>
+    //     <span>${mhs.nrp}</span>
+    // </div>`;
+
+
+    // 2. Looping
+    // const mhs = [
+    //     {
+    //         name: 'Ali Havizni',
+    //         email: 'ahavizni@gmail.com'
+    //     },
+    //     {
+    //         name: 'Nadya Az-Zahra',
+    //         email: 'nadyasayang321@gmail.com'
+    //     },
+    //     {
+    //         name: 'Amanda Christy',
+    //         email: 'amandasukasamaali@gmail.com'
+    //     }
+    // ];
+
+    // const el = `<div class="mhs">
+    //         ${mhs.map(m => `<ul>
+    //                 <li>${m.name}</li>
+    //                 <li>${m.email}</li>
+    //             </ul>`).join('')}
+    //     </div>`;
+
+
+    // 3. Conditional
+    // ternary
+    // const playlist = {
+    //     title: 'Pink Venom',
+    //     singer: 'Blackpink',
+    //     feat: 'Nella Kharisma'
+    // }
+
+    // const el = `<div class="playlist">
+    //         <ul>
+    //             <li>${playlist.singer}</li>
+    //             <li>${playlist.title} ${playlist.feat ? `(feat. ${playlist.feat})` : ''}</li>
+    //         </ul>
+    //     </div>`;
+
+    // 4. Nested
+    // HTML Fragment Bersarang / Nested
+    const mhs = {
+        name: 'Ali Havizni',
+        semester: 5,
+        subject: [
+            'Perangkat Lunak Jaringan',
+            'Rekayasa Perangkat Lunak',
+            'Jaringan Komunikasi',
+            'Sistem Basis Data'
+        ]
+    };
+
+    function printTheSubject(subject) {
+        return `
+        <ol>
+            ${subject.map(s => `<li>${s}</li>`).join('')}
+        </ol>
+        `;
+    }
+
+    const el = `<div class="mhs">
+            <h2>${mhs.name}</h2>
+            <span class="semester">Semester: ${mhs.semester}</span>
+            <h4>Mata Kuliah :</h4>
+            ${printTheSubject(mhs.subject)}
+        </div>`
+
+    document.body.innerHTML = el;
+</script>
+</body>
+</html>

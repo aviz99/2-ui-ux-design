@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Rest Parameter</title>
+</head>
+<body>
+    
+<script>
+    // Rest Parameter
+    // function myFunc(...myArgs) {
+    //     // return `a = ${a}, b = ${b}, myArgs = ${myArgs}`;
+    //     // return myArgs;
+    //     // return Array.from(arguments);
+    //     return [...arguments];
+    // }
+
+    // console.log(myFunc(1,2,3,4,5));
+
+
+    // function sum(...num) {
+    //     // let total = 0;
+    //     // for( const n of num ) {
+    //     //     total += n;
+    //     // }
+    //     // return total;
+
+    //     return num.reduce((acc, cv) => acc + cv);
+    // }
+
+    // console.log(sum(1,2,3,4,5));
+
+
+    // Array Destructuring Rest Parameter
+    // const kelompok1 = ['Ali', 'Stella', 'Vania', 'Gabriella', 'Felicia'];
+    // const [ketua, wakil, ...anggota] = kelompok1;
+    // console.log(anggota);
+
+    // Object Destructuring Rest Parameter
+    // const team = {
+    //     pm: 'Ali',
+    //     frontEnd1: 'Stella',
+    //     frontEnd2: 'Vania',
+    //     backEnd1: 'Gabriella',
+    //     backEnd2: 'Felicia',
+    //     ux: 'Stanley',
+    //     devOps: 'Clarisa'
+    // }
+
+    // const {pm, ...myTeam} = team;
+    // console.log(myTeam);
+
+    // Filtering Rest Parameter
+    function filterBy(type, ...myArgs) {
+        return myArgs.filter(a => typeof a === type);
+    }
+
+    console.log(filterBy('number', 1, 2, 3, 'Ali', false, 10, true, 'Stella'));
+    console.log(filterBy('string', 1, 2, 3, 'Ali', false, 10, true, 'Stella'));
+    console.log(filterBy('boolean', 1, 2, 3, 'Ali', false, 10, true, 'Stella'));
+</script>
+</body>
+</html>

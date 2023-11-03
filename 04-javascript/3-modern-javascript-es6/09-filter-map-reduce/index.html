@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Filter, Map & Reduce</title>
+</head>
+<body>
+    
+
+<script>
+    const angka = [-1, 8, 9, 1, 4, -5, -4, 3, 2, 9];
+
+    // Filter
+    // Mencari angka >= 3
+    // const newAngka = angka.filter(a => a >= 3);
+    // console.log(newAngka);
+
+    // Map
+    // Kalikan semua angka dengan 2
+    // const newAngka = angka.map(a => a * 2);
+    // console.log(angka);
+    // console.log(newAngka);
+
+    // Reduce
+    // Jumlahkan seluruh elemen pada array
+    // const namaVariabel = nilai.reduce((hasilDariProsesNya, elemenArrayYangDilooping) => accumulator + currentValue, nilaiDefault(0))
+    // nilaiAwal(0) + -1 + 8 + 9 + 1 + 4 + -5 + -4 + 3 + 2 + 9
+    // const newAngka = angka.reduce((accumulator, currentValue) => accumulator + currentValue, 10);
+    // console.log(newAngka);
+
+    // Method Chaining
+    // Cari angka > 5
+    // Kalikan 3
+    // Jumlahkan
+    const result = angka.filter(a => a > 5) // 8, 9, 9
+        .map(a => a * 3) // 24, 27, 27
+        .reduce((acc, cv) => acc + cv); // 78
+    console.log(result);
+
+</script>
+</body>
+</html>

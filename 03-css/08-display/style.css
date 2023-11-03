@@ -1,0 +1,49 @@
+/* Display */
+
+/* Elemen Inline : b, strong, i, em, a, span, sub, sup, button, input, label, select, img, textarea dll */
+
+/* inline-block */
+/* Tidak ada elemen yang secara default memiliki properti display: inline-block */
+/* Kita harus ubah secara manual properti tersebut */
+/* Perilaku dasarnya sama dengan elemen inline */
+/* Perbedaannya, elemen inline-block dapat kita atur tinggi dan lebar-nya */
+/* Biasa nya digunakan untuk navigasi */
+
+/* Elemen Block : h1-h6, p, ol, ul, li, form, hr, div dll */
+/* ul>li*5>a[href=#]{Link $} */
+/* Artinya : list tidak terurut yang didalamnya ada 5 buah list item yang didalamnya ada tag a nya(link) yang punya href kosong yang tulisannya Link 5 */
+
+.navigasi li {
+    /* display: inline; */
+    display: block;
+}
+
+/* a {
+    background-color: aquamarine;
+    width: 200px;
+    height: 200px;
+    display: inline-block;
+} */
+
+/* h1, h2, p {
+    background-color: blue;
+} */
+
+img {
+    /* display: none; */
+    width: 200px;
+    height: 200px;
+}
+
+.main {
+    width: 600px;
+    background-color: cadetblue;
+}
+
+.main span {
+    background-color: brown;
+}
+
+.main h2 {
+    background-color: yellow;
+}

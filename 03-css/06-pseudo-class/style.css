@@ -1,0 +1,57 @@
+/* Pseudo-Class */
+.hello:link {
+  color: orange;
+}
+
+.hello:hover {
+  color: green;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+}
+
+.hello:active {
+  font-style: italic;
+}
+
+.hello:visited {
+  color: red;
+}
+
+/* li:first-child a {
+  color: yellow;
+}
+
+li:last-child a {
+  color: #999;
+} */
+
+li:nth-child(even) a {
+  color: black;
+  text-decoration: none;
+}
+
+li:nth-child(even) a:hover {
+  color: blue;
+  text-decoration: none;
+  font-size: 2rem;
+}
+
+/* p:first-of-type {
+  color: darkslategray;
+} */
+
+/* p:last-of-type {
+  color: darkkhaki;
+} */
+
+.p1:target {
+  background-color: salmon;
+}
+
+.p2:target {
+  background-color: lightskyblue;
+}
+
+.p3:target {
+  background-color: darkolivegreen;
+}

@@ -1,0 +1,31 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+form {
+    width: 600px;
+    padding: 20px;
+}
+
+form div {
+    margin: 10px;
+}
+
+label {
+    display: block;
+}
+
+input:invalid,
+input:required:invalid {
+    border: none;
+    outline: 2px solid red;
+    border-radius: 2px;
+}
+
+input:valid,
+input:required {
+    border: 1px solid black;
+    outline: inherit;
+    border-radius: inherit;
+}

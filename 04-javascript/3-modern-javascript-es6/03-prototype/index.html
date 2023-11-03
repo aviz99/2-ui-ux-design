@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Prototype</title>
+</head>
+<body>
+    
+
+
+
+
+<script>
+    // Prototype
+    // const methodStudent = {
+    //     eat: function(serving) {
+    //         this.energy += serving;
+    //         console.log(`Halo ${this.name}, Selamat Makan.`);
+    //     },
+
+    //     play: function(hours) {
+    //         this.energy -= hours;
+    //         console.log(`Kamu Ketahuan ${this.name}, Karena Kamu Ketahuan Bermain Game!!!`);
+    //     },
+
+    //     sleep: function(hours) {
+    //         this.energy += hours;
+    //         console.log(`Waktu nya tidur ${this.name}.`);
+    //     }
+    // };
+
+    // function Student(name, energy) {
+    //     let student = Object.create(methodStudent);
+    //     student.name = name;
+    //     student.energy = energy;
+
+    //     return student;
+    // }
+
+    // let person1 = Student('Ali', 10);
+    // let person2 = Student('Havizni', 10);
+
+
+
+
+
+
+    // Prototype Versi Object
+    // function Student(name, energy) {
+    //     // let student = Object.create(methodStudent);
+    //     this.name = name;
+    //     this.energy = energy;
+
+    //     // return student;
+    // }
+
+    // Student.prototype.eat = function(serving) {
+    //     this.energy += serving;
+    //     return `Halo ${this.name}, Selamat Makan.`;
+    // }
+
+    // Student.prototype.play = function(hours) {
+    //     this.energy -= hours;
+    //     return `${this.name} Kamu Ketahuan Karena Ketahuan Bermain Game!!!`;
+    // }
+
+    // Student.prototype.sleep = function(hours) {
+    //     this.energy += hours;
+    //     return `Hai ${this.name}, Selamat Tidur.`;
+    // }
+
+    // let person1 = new Student('Ali', 10);
+    // let person2 = new Student('Havizni', 10);
+
+
+
+
+
+
+
+    // Prototype Versi Class
+    class Student {
+        constructor(name, energy) {
+            this.name = name;
+            this.energy = energy;
+        }
+
+        eat(serving) {
+            this.energy += serving;
+            return `Halo ${this.name}, Selamat Makan.`;
+        }
+    
+        play(hours) {
+            this.energy -= hours;
+            return `${this.name} Kamu Ketahuan Karena Ketahuan Bermain Game!!!`;
+        }
+    
+        sleep(hours) {
+            this.energy += hours;
+            return `Hai ${this.name}, Selamat Tidur.`;
+        }
+    }
+
+
+    let person1 = new Student('Ali', 10);
+    let person2 = new Student('Havizni', 10);
+</script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+/* Background */
+body {
+	/* background-color: #333;
+	background-image: url(img/sayatahu.png);
+	background-repeat: no-repeat;
+	background-position: bottom center; */
+	background : white url(img/sayatahu.png) no-repeat bottom center;
+}

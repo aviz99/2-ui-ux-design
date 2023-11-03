@@ -1,0 +1,15 @@
+/* Text Styling */
+h1 {
+  color: #d2691e;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+
+p {
+  color: darkolivegreen;
+  text-align: justify;
+  text-indent: 30px;
+  letter-spacing: 5px;
+  word-spacing: 5px;
+}

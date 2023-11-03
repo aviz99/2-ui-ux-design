@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Form Validation</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="" method="post" autocomplete="off">
+        <div>
+            <label for="nama">Masukkan nama: </label>
+            <input type="text" name="nama" id="nama" required minlength="2" maxlength="5" oninvalid="this.setCustomValidity('Ini harus diisi!')" oninput="this.setCustomValidity('')">
+        </div>
+        
+        <div>
+            <label for="email">Masukkan email: </label>
+            <input type="email" name="email" id="email" autofocus>
+        </div>
+
+        <div>
+            <label for="telepon">Masukkan No.HP: </label>
+            <input type="tel" name="telepon" id="telepon" pattern="(\+62|62|0)8[1-9][0-9]{6,9}$">
+        </div>
+
+        <div>
+            <label for="website">Masukkan URL Website: </label>
+            <input type="url" name="website" id="website">
+        </div>
+
+        <div>
+            <label for="nomor">Masukkan angka: </label>
+            <input type="number" name="nomor" id="nomor" min="10" max="100" step="5">
+        </div>
+
+        <div>
+            <label for="slider">Masukkan angka: </label>
+            <span class="awal">0</span>
+            <input type="range" name="slider" id="slider" min="0" max="100" step="5">
+            <span class="akhir">100</span>
+        </div>
+
+        <div>
+            <label for="tanggal">Masukkan tanggal: </label>
+            <input type="date" name="tanggal" id="tanggal">
+        </div>
+
+        <div>
+            <label for="warna">Masukkan warna: </label>
+            <input type="color" name="warna" id="warna">
+            <span class="hexa"></span>
+        </div>
+
+        <div>
+            <label for="kodepos">Masukkan kodepos: </label>
+            <input type="text" name="kodepos" id="kodepos" pattern="^([1-9])[0-9]{4}$">
+        </div>
+
+        <div>
+            <button type="submit">Kirim!</button>
+        </div>
+    </form>
+
+<script>
+    const slider = document.getElementById('slider');
+    const awal = document.querySelector('.awal');
+    const akhir = document.querySelector('.akhir');
+
+    awal.innerHTML = slider.min;
+    akhir.innerHTML = slider.value;
+    slider.addEventListener('input', () => {
+        akhir.innerHTML = slider.value;
+    });
+
+    const color = document.querySelector('#warna');
+    const hexaColor = document.querySelector('.hexa');
+
+    hexaColor.innerHTML = color.value;
+    color.addEventListener('input', () => {
+        hexaColor.innerHTML = color.value;
+        hexaColor.style.color = color.value;
+    });
+
+</script>
+</body>
+</html>

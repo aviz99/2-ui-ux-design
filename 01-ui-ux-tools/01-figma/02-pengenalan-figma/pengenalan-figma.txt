@@ -1,0 +1,13 @@
+02 / 11 / 2023
+Day - 1
+PENGENALAN FIGMA
+
+Mengenal Tools Yang Ada Di Dalam Figma
+- Canvas = tengah
+- Properties = kanan
+- Layers = kiri
+- Toolsbar = atas
+
+Toolsbar
+
+Menduplikat layer = ctrl + D

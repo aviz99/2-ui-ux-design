@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/reset.css">
+    <title>CSS3 Study Case 4 Lightbox</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Jump Force</h1>
+
+    <div class="container">
+        <!-- Thumbnail -->
+        <ul class="gallery">
+            <li>
+                <a href="#images-1">
+                    <img src="img/thumbnails/gojosatoruthumbs.png" alt="gojo satoru">
+                    <span>Gojo</span>
+                </a>
+
+                <div class="overlay" id="images-1">
+                    <a href="#" class="close">X CLOSE</a>
+                    <a href="#images-4" class="prev">prev</a>
+                    <img src="img/fullsize/gojosatorufullsize.png" alt="gojo satoru">
+                    <a href="#images-2" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#images-2">
+                    <img src="img/thumbnails/luffythumbs.png" alt="monkey d. luffy">
+                    <span>Luffy</span>
+                </a>
+
+                <div class="overlay" id="images-2">
+                    <a href="#" class="close">X CLOSE</a>
+                    <a href="#images-1" class="prev">prev</a>
+                    <img src="img/fullsize/luffyfullsize.png" alt="monkey d. luffy">
+                    <a href="#images-3" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#images-3">
+                    <img src="img/thumbnails/gokuthumbs.png" alt="son goku">
+                    <span>Goku</span>
+                </a>
+
+                <div class="overlay" id="images-3">
+                    <a href="#" class="close">X CLOSE</a>
+                    <a href="#images-2" class="prev">prev</a>
+                    <img src="img/fullsize/gokufullsize.png" alt="son goku">
+                    <a href="#images-4" class="next">next</a>
+                </div>
+            </li>
+            <li>
+                <a href="#images-4">
+                    <img src="img/thumbnails/ichigothumbs.png" alt="ichigo kurosaki">
+                    <span>Ichigo</span>
+                </a>
+
+                <div class="overlay" id="images-4">
+                    <a href="#" class="close">X CLOSE</a>
+                    <a href="#images-3" class="prev">prev</a>
+                    <img src="img/fullsize/ichigofullsize.png" alt="ichigo kurosaki">
+                    <a href="#images-1" class="next">next</a>
+                </div>
+            </li>
+            <div class="clear"></div>
+        </ul>
+        <!-- Akhir Thumbnail -->
+    </div>
+</body>
+</html>

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan For Of For In</title>
+</head>
+<body>
+    <ul>
+        <li class="nama">Ali</li>
+        <li class="nama">Amanda</li>
+        <li class="nama">Nadya</li>
+        <li class="nama">Dinda</li>
+        <li class="nama">Stella</li>
+        <li class="nama">Keisya</li>
+        <li class="nama">Cindy</li>
+    </ul>
+<script>
+    // for of
+    // Array for of
+    // const mhs = ['Ali', 'Amanda', 'Nadya', 'Dinda', 'Stella', 'Keisya', 'Cindy'];
+
+    // for( let i = 0; i < mhs.length; i++ ) {
+    //     console.log(mhs[i]);
+    // }
+
+    // mhs.forEach( m => console.log(m) );
+
+    // for( const mahasiswa of mhs ) {
+    //     console.log(mahasiswa);
+    // }
+
+    // String for of
+    // const nama = 'Ali';
+    // for( const n of nama ) {
+    //     console.log(n);
+    // }
+
+    // const mhs = ['Ali', 'Amanda', 'Nadya', 'Dinda', 'Stella', 'Keisya', 'Cindy'];
+    // mhs.forEach( (m, i) => {
+    //     console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+    // });
+
+    // for( const [i, m] of mhs.entries() ) {
+    //     console.log(`${m} adalah mahasiswa ke-${i + 1}`);
+    // }
+
+
+    // NodeList for of
+    // const liName = document.querySelectorAll('.nama');
+    // liName.forEach(n => console.log(n.textContent));
+
+    // for( const n of liName ) {
+    //     console.log(n.textContent);
+    // }
+
+    // arguments for of
+    // function jumlahkanAngka() {
+    //     // return arguments.reduce((a, i) => a + i);
+    //     // arguments.forEach(a => jumlah += a);
+    //     let jumlah = 0;
+    //     for( const a of arguments ) {
+    //         jumlah += a;
+    //     }
+    //     return jumlah;
+    // }
+
+    // console.log(jumlahkanAngka(1, 2, 3, 4, 5));
+
+
+    // for in
+    const mhs = {
+        nama: 'Ali Havizni',
+        umur: 26,
+        email: 'ahavizni@gmail.com'
+    }
+
+    for( const m in mhs ) {
+        console.log(mhs[m]);
+    }
+</script>
+</body>
+</html>

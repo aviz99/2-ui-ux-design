@@ -1,0 +1,95 @@
+/* Box Model */
+
+/* Margin */
+
+/* Overlapping Margin */
+/* Margin Vertikal = Margin yang dipilih margin yang paling besar */
+/* Margin Horizontal = Margin akan dijumlahkan atau digabungkan */
+
+/* Shorthand Margin */
+/* 1 nilai = margin: top-right-bottom-left */
+/* 2 nilai = margin: top-bottom left-right */
+/* 3 nilai = margin: top left-right bottom */
+/* 4 nilai = margin: top right bottom left */
+
+/* div {
+    display: inline-block;
+} */
+
+div {
+    width: 600px;
+    margin: 10px auto;
+    box-sizing: border-box;
+}
+
+/* .satu {
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    margin-left: auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin: 10px 20px 30px 40px;
+}
+
+.dua {
+    width: 100px;
+    height: 100px;
+    background-color: orange;
+    margin-top: -100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.tiga {
+    width: 50px;
+    height: 50px;
+    background-color: green;
+    margin-left: auto;
+    margin-right: auto;
+} */
+
+
+/* Padding */
+/* Padding tidak bisa diberi nilai negatif (-) */
+/* Padding tidak punya nilai auto */
+/* Padding menambah / mempengaruhi ukuran element */
+/* Shorthand Padding */
+/* 1 nilai = padding: top-right-bottom-left */
+/* 2 nilai = padding: top-bottom left-right */
+/* 3 nilai = padding: top left-right bottom */
+/* 4 nilai = padding: top right bottom left */
+/* Border */
+/* Border menambah / mempengaruhi ukuran element */
+/* Total Dimensi = Width/Height + Padding + Border */
+/* Box-Sizing */
+/* Akan membuat lebar ukuran dari kotak nya akan tetap disesuaikan dengan kotak nya berapapun dari padding ataupun border nya */
+.text-1 {
+    /* width: 180px;
+    height: 180px;
+    background-color: salmon;
+    margin: 20px auto; */
+    /* padding-left: 50px; */
+    /* padding: 50px; */
+    /* border-width: 5px; */
+    /* border-style: dotted; */
+    /* border-color: #fff; */
+    /* border-top: 10px dotted #333;
+    border-right: 10px dashed purple;
+    border-bottom: 10px double cadetblue;
+    border-left: 10px solid chartreuse; */
+    /* border: 5px solid #555; */
+    /* border: 5px dotted #555; */
+    /* border: 5px dashed #555; */
+    /* border: 5px double #555; */
+    background-color: royalblue;
+    padding: 10px;
+    border: 15px solid red;
+}
+
+.text-2 {
+    background-color: lightgreen;
+    padding: 30px;
+    border: 10px dashed orange;
+}

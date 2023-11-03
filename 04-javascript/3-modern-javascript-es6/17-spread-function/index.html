@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Spread Operator</title>
+    <style>
+        body {
+            background-color: salmon;
+            text-align: center;
+        }
+
+        .nama {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 80px;
+            color: white;
+        }
+
+        .nama span {
+            display: inline-block;
+            transition: .3s;
+            cursor: pointer;
+        }
+
+        .nama span:hover {
+            transform: scale(2) translateY(-20px);
+        }
+    </style>
+</head>
+<body>
+    <!-- <ul>
+        <li>Ali</li>
+        <li>Amanda</li>
+        <li>Stella</li>
+        <li>Vivie</li>
+        <li>Tiffany</li>
+        <li>Gabriella</li>
+        <li>Jessica</li>
+    </ul> -->
+
+    <h1 class="nama">Ali</h1>
+<script>
+    // spread operator
+    // memecah iterables menjadi single elemen
+    // const mhs = ['Ali', 'Amanda', 'Stella'];
+    // console.log(...mhs[0]);
+
+    // Menggabungkan 2 array
+    // const mhs = ['Ali', 'Amanda', 'Stella'];
+    // const dosen = ['Vivie', 'Christy', 'Gabriella'];
+    // const orang = [...mhs, 'Stanley', ...dosen];
+    // // const orang = mhs.concat(dosen);
+    // console.log(orang);
+
+
+    // Melakukan copy nilai pada array
+    // const mhs = ['Ali', 'Amanda', 'Stella'];
+    // // const mhs1 = mhs;
+    // const mhs1 = [...mhs];
+    // mhs1[0] = 'Tiffany';
+    // console.log(mhs1);
+
+
+    // const liMhs = document.querySelectorAll('li');
+    // const mhs = [...liMhs].map(m => m.textContent);
+
+    // console.log(mhs);
+
+
+    const nameH1 = document.querySelector('.nama');
+    const huruf = [...nameH1.textContent].map(h => `<span>${h}</span>`).join('');
+    nameH1.innerHTML = huruf;
+</script>
+</body>
+</html>

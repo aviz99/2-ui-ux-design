@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Images Elements</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 1.123rem;
+            line-height: 1.6;
+            color: #333;
+            padding: 2em;
+        }
+
+        .hero {
+            display: grid;
+            grid-gap: 2em;
+            align-items: center;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        @media (min-width: 960px) {
+            .hero {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Images Elements -->
+    <!-- <h1 style="margin-bottom: 1500px;">Images Elements</h1>
+    <img src="img/cat-small.jpg" alt="kucing abu-abu memakai kacamata hitam" srcset="img/cat-small.jpg 500w, img/cat-medium.jpg 750w, img/cat-large.jpg 1000w" sizes="(min-width: 1200px) 50vw" loading="lazy"> -->
+
+
+    <div class="hero">
+        <div class="hero-text">
+            <h1>Hello Ali</h1>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed velit doloribus quam ex. Enim doloribus quia earum suscipit illum nesciunt, laborum quas perferendis tempore pariatur minus porro, ipsa vero soluta?</p>
+        </div>
+        <picture>
+            <source media="(min-width: 960px)" srcset="img-2/cat-large.jpg" sizes="50vw">
+            <source media="(min-width: 600px)" srcset="img-2/cat-medium-landscape.jpg">
+            <img src="img-2/cat-small-square.jpg" alt="">
+        </picture>
+    </div>
+</body>
+</html>

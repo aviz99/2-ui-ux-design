@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Timing Function Event</title>
+</head>
+<body>
+    
+    <h1 id="text">Hello World</h1>
+
+    <button id="btn">Stop!!!</button>
+
+<script>
+
+// setTimeOut()
+// const test = setTimeout(function() {
+//     console.log('Ucup Pantek !!!');
+// }, 5000);
+
+// const btnStop = document.getElementById('btn');
+// btnStop.addEventListener('click', function() {
+//     clearTimeout(test);
+//     console.log('Bang Udah Bang');
+// });
+
+// setInterval()
+// const testDua = setInterval(function() {
+//     console.log('Ayo aja gua mah')
+// }, 2000);
+
+// const btnStop = document.getElementById('btn');
+// btnStop.addEventListener('click', function() {
+//     clearInterval(testDua);
+//     console.log('Bang Udah Bang');
+// });
+
+
+// Program Hitung Mundur
+const timeDestination = new Date('May 25, 2023 20:02:00').getTime();
+const countDown = setInterval(function() {
+    const now = new Date().getTime();
+    const difference = timeDestination - now;
+    const day = Math.floor(difference / (1000 * 60 * 60 * 24));
+    const hour = Math.floor(difference % (1000 * 60 * 60 * 24) / (1000 * 60 * 60)); 
+    const minute = Math.floor(difference % (1000 * 60 * 60) / (1000 * 60)); 
+    const second = Math.floor(difference % (1000 * 60) / 1000); 
+
+    const textTeks = document.getElementById('text');
+    textTeks.innerHTML = `Your Time Until : ${day} day ${hour} hour ${minute} minute ${second} second`;
+
+    if( difference < 0 ) {
+        clearInterval(countDown);
+        textTeks.innerHTML = 'TIMEOUT';
+    }
+
+}, 1000);
+
+</script>
+</body>
+</html>

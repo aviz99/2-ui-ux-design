@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Array</title>
+</head>
+<body>
+    
+<script>
+
+// Array
+// let dataArray = ["Ali", "David", "Havizni", "Darojat", "Rani"];
+
+// Menampilkan isi array
+// for( let arr of dataArray ) {
+//     console.info(`${arr}`);
+// }
+
+// for( let i = 0; i < dataArray.length; i++ ) {
+//     console.info(`Mahasiswa ke-${i+1} : ${dataArray[i]}`);
+// }
+
+// Method pada array
+// 1. Join
+// console.info(dataArray.join(" - "));
+
+// 2. Push & Pop
+// dataArray.push("Samsul","Silvia");
+// dataArray.pop();
+    
+// 3. Unshift & Shift
+// dataArray.unshift("Toni");
+// dataArray.shift();
+
+// 4. Splice
+// dataArray.splice(1, 2, "Darojat", "Rani");
+
+// 5. Slice
+// let dataArray2 = dataArray.slice(1,4);
+// console.info(dataArray.join(" - "));
+// console.info(dataArray2.join(" - "));
+
+// 6. Foreach
+// let numberData = [1,2,3,4,5,6,7,8,9];
+// numberData.forEach(function(e) {
+//     console.info(e)
+// })
+
+// dataArray.forEach(function(e,i) {
+//     console.info(`Mahasiswa ke-${i+1} adalah : ${e}`);
+// })
+
+// 7. Map
+// let numberData2 = [10,20,30,40,50,60,70,80,90];
+// let numberData3 = numberData2.map(function(e) {
+//     return e * 2;
+// });
+// console.info(numberData3);
+
+// 8. Sort
+// let numberData = [9,7,8,20,10,30,40,50,6,4,2,1,5,3];
+// console.info(numberData.join(" - "));
+// numberData.sort(function(a,b) {
+//     return a-b;
+// });
+
+// 9. Filter
+// let numberData = [9,7,8,20,10,30,40,50,6,4,2,1,5,3];
+// let numberData4 = numberData.filter(function(a) {
+//     return a > 5;
+// });
+
+// 10. Find
+let numberData = [9,7,8,20,10,30,40,50,6,4,2,1,5,3];
+const dataNumberArray = numberData.find(function(a) {
+    return a > 5;
+});
+console.info(dataNumberArray);
+
+</script>
+</body>
+</html>

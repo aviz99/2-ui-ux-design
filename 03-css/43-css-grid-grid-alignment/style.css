@@ -1,0 +1,94 @@
+/* CSS GRID GRID Alignment */
+/* justify-items = Mensejajarkan grid items pada sumbu horizontal. */
+/* justify-items: start | end | center | stretch; */
+/* align-items = Mensejajarkan grid items pada sumbu vertikal. */
+/* align-items: start | end | center | stretch; */
+/* place-items = Shorthand untuk menulis justify-items & align-items dalam satu deklarasi. */
+/* place-items: align-items justify-items; */
+/* justify-content = Mengatur posisi grid container pada sumbu horizontal, ini bisa dilakukan ketika ukuran total grid lebih kecil dari ukuran containernya, biasanya ketika grid items nya menggunakan ukuran yang fixed (px). */
+/* justify-content: start | end | center | stretch | space-around | space-between | space-evenly; */
+/* align-content = sama seperti justify-content, tapi untuk sumbu vertikal. */
+/* align-content: start | end | center | stretch | space-around | space-between | space-evenly; */
+/* place-content = Shorthand untuk menulis justify-content & align-content dalam satu deklarasi */
+/* place-content: justify-content align-content; */
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    /* width: 80%; */
+    width: 80%;
+    height: 500px;
+    margin: auto;
+    display: grid;
+    /* grid-template-rows: 130px 130px 130px; */
+    /* grid-template-columns: 1fr 1fr 1fr; */
+    grid-template-columns: 120px 180px 120px;
+    grid-template-rows: 80px 80px;
+    gap: 5px;
+    /* justify-items: start; */
+    /* justify-items: end; */
+    /* justify-items: center; */
+    /* justify-self: stretch; */
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+    /* align-items: stretch; */
+    /* place-items: center center; */
+    /* place-items: center; */
+    /* place-items: center end; */
+    /* justify-content: start; */
+    /* justify-content: end; */
+    /* justify-content: center; */
+    /* justify-content: stretch; */
+    /* justify-content: space-around; */
+    /* justify-content: space-between; */
+    /* justify-content: space-evenly; */
+    /* align-content: start; */
+    /* align-content: end; */
+    /* align-content: center; */
+    /* align-content: stretch; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
+    /* place-content: center center; */
+    /* place-content: center; */
+    /* place-content: space-around space-between; */
+    place-content: space-between;
+}
+
+.items {
+    width: 100px;
+    height: 50px;
+    border: 3px solid black;
+    /* height: 100px; */
+    /* width: 150px; */
+    background-color: rgb(138, 289, 254);
+    justify-content: end;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}
+
+/* .items.i1,
+.items.i4,
+.items.i7 {
+    width: 130px;
+    height: 100px;
+}
+
+.items.i2,
+.items.i5,
+.items.i8 {
+    width: 80px;
+    height: 50px;
+}
+
+.items.i3,
+.items.i6,
+.items.i9 {
+    width: 170px;
+    height: 80px;
+} */

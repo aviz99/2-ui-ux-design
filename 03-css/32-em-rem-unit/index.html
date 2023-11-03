@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS3 Em & Rem</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap">
+    <style>
+    /* Em & Rem */
+    /* html {
+        font-size: 10px;
+    } */
+
+    body {
+        font-family: 'Roboto', sans-serif;
+        color: #333;
+        text-align: center;
+        background-color: #eee;
+        line-height: 1.6;
+        font-weight: 300;
+        min-height: 2000px;
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .typography {
+        display: flex;
+    }
+
+    .typography .col {
+        flex: 1;
+        margin: 0 0.5em;
+        padding: 0 0.5em;
+    }
+
+
+    /* em */
+    /* 1em = 16px untuk ukuran default jika element parent nya tidak memberikan properti yang bersangkutan */
+
+    /* .typography {
+        font-size: 10px;
+    }
+
+    .col-em {
+        font-size: 2em;
+    }
+    
+    .col-em h2 {
+        font-size: 2em;
+    }
+
+    .col-em p {
+        font-size: 1.5em;
+    } */
+
+    /* rem */
+    /* 1rem = 16px untuk ukuran default jika element root nya tidak memberikan properti yang bersangkutan */
+    /* .col-rem {
+        font-size: 10px;
+    }
+
+    .col-rem h2 {
+        font-size: 2rem;
+    }
+
+    .col-rem p {
+        font-size: 1.5rem;
+    } */
+
+    .btn {
+        display: inline-block;
+        background: #333;
+        font-weight: 700;
+        color: white;
+        text-decoration: none;
+        text-transform: uppercase;
+        padding: 1em 3em;
+        margin: 0 1.5rem;
+    }
+
+    .btn-sm {
+        font-size: 0.5em;
+    }
+
+    .btn-lg {
+        font-size: 2em;
+    }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Typography</h1>
+        <!-- <div class="typography">
+            <div class="col col-em">
+                <h2>em</h2>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente, doloribus est voluptatem corporis tenetur dolorum harum velit nulla corrupti dicta vitae. Odio incidunt cum obcaecati laboriosam velit facilis maiores culpa temporibus perferendis quisquam sapiente eum tenetur dolore, tempore blanditiis aut iusto nemo totam repellendus libero fugit consectetur dicta eveniet soluta. Cupiditate exercitationem deserunt, nisi fuga quisquam accusamus. Distinctio blanditiis temporibus totam vitae ad quam quidem unde sit fugit, eos architecto? Cumque nam, porro temporibus ab aperiam autem aut sit illum dicta laboriosam quaerat dignissimos praesentium excepturi ratione fuga suscipit optio deleniti dolor. Perferendis architecto itaque nisi at ut aut asperiores.
+                </p>
+            </div>
+            <div class="col col-rem">
+                <h2>rem</h2>
+                <p>
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Molestiae voluptates dolores dolor explicabo, cupiditate quas. Nam reprehenderit maxime commodi aspernatur iusto, temporibus sed perspiciatis quaerat, ex debitis tempore molestiae eos suscipit ullam magnam illum eligendi quam minima. In magni consequuntur cumque assumenda beatae rem maiores eveniet alias quos, nam suscipit itaque unde, recusandae dicta veritatis saepe, ipsa facilis libero amet error aliquam perspiciatis quas at autem. Inventore, accusamus sit corrupti totam provident asperiores mollitia possimus excepturi sint maiores dolore aspernatur placeat consequuntur neque, distinctio repellendus repellat, ex quis. Reprehenderit tempora obcaecati a eaque distinctio sint, dolorem laborum quas corporis facilis.
+                </p>
+            </div>
+        </div> -->
+
+        <div class="length">
+            <h2>Title</h2>
+            <a href="" class="btn">Click Me!</a>
+            <a href="" class="btn btn-sm">Click Me!</a>
+            <a href="" class="btn btn-lg">Click Me!</a>
+        </div>
+    </div>
+</body>
+</html>

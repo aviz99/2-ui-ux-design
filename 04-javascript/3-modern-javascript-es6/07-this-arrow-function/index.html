@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan This Arrow Function</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .box {
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            margin: 50px auto;
+            transition: .3s width,
+                        .3s height,
+                        .3s margin-top,
+                        1s background-color;
+        }
+
+        .size {
+            width: 150px;
+            height: 150px;
+            margin-top: 25px;
+        }
+
+        .caption {
+            background-color: black;
+        }
+    </style>
+</head>
+<body>
+    <div class="box"></div>
+
+<script>
+    // let mahasiswa = ["Ali","Amanda","Cantika"];
+    // let jmlHuruf = mahasiswa.map(({name, hitungHuruf: name.length}));
+    // console.table(jmlHuruf);
+
+
+    // Konsep This Pada Arrow Function
+    // Constructor Function
+    // let Mahasiswa = function() {
+    //     this.name = "Ali";
+    //     this.age = 26;
+    //     this.sayHello = function () {
+    //         return `Halo nama saya adalah ${this.name}, saya berumur ${this.age} tahun.`;
+    //     }
+    // }
+
+    // let personSatu = new Mahasiswa();
+
+
+
+    // Arrow Function Menggunakan This Constructor Function
+    // let Mahasiswa = function() {
+    //     this.name = "Ali";
+    //     this.age = 26;
+    //     this.sayHello = () => {
+    //         return `Halo nama saya adalah ${this.name}, saya berumur ${this.age} tahun.`;
+    //     }
+    // }
+
+    // let personSatu = new Mahasiswa();
+
+
+
+
+
+    // Arrow Function Dengan Object Literals
+    // const mhs1 = {
+    //     name: "Ali",
+    //     age: 26,
+    //     sayHello: () => {
+    //         // return `Halo nama saya adalah ${this.name}, saya berumur ${this.age} tahun.`;
+    //         console.log(this);
+    //     }
+    // }
+
+
+
+
+
+    // let Mahasiswa = function() {
+    //     this.name = "Ali";
+    //     this.age = 26;
+    //     this.sayHello = () => {
+    //         return `Halo nama saya adalah ${this.name}, saya berumur ${this.age} tahun.`;
+    //     }
+
+    //     setInterval(() => {
+    //         console.log(this.age++);
+    //     }, 500);
+    // }
+
+    // let personSatu = new Mahasiswa();
+
+
+
+    const box = document.querySelector('.box');
+
+    box.addEventListener('click', function() {
+        let satu = 'size';
+        let dua = 'caption';
+        if(this.classList.contains(satu)) {
+            [satu, dua] = [dua, satu];
+        }
+        this.classList.toggle(satu);
+        setTimeout( () => {
+            this.classList.toggle(dua);
+        }, 600);
+    });
+
+
+</script>
+</body>
+</html>

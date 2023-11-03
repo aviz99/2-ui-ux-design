@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Asynchronous</title>
+</head>
+<body>
+    
+<script>
+$.on('button', 'click', function onclick() {
+    setTimeout(function timer() {
+        console.log('You clicked the button!');
+    }, 2000)
+});
+
+console.log('HAI!!!');
+
+setTimeout(function timeout() {
+    console.log('Clicked the button!');
+}, 5000);
+
+console.log('Welcome to loupe.');
+</script>
+</body>
+</html>

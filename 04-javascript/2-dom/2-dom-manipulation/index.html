@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+    <style>
+    
+    * { 
+        border: 2px solid #dedede; 
+        padding: 15px; 
+        margin: 15px; 
+    }
+    html { 
+        margin: 0;
+        padding: 0;
+    }
+    body { 
+        max-width: 600px;
+        margin: 30px auto;
+        font-family: sans-serif;
+        color: #333;
+    }
+    .biru-muda {
+        background-color:lightblue;
+    }
+    
+    </style>
+</head>
+<body>
+
+    <h1 id="judul">Hello World</h1>
+    <div id="container">
+        <section id="a">
+            <p class="p1">paragraf 1</p>
+            <a href="https://www.instagram.com/alihaviznii/">Instagram Ali Havizni</a>
+            <p class="p2">paragraf 2</p>
+            <p class="p3">paragraf 3</p>
+            <button>Let's Go Code !</button>
+        </section>
+        <section id="b">
+            <p>paragraf 4</p>
+            <ul>
+                <li>item 1</li>
+                <li>item 2</li>
+                <li>item 3</li>
+            </ul>
+        </section>
+    </div>
+
+<script>
+
+// DOM Manipulation
+// element.innerHTML
+// const judul = document.getElementById('judul');
+// judul.innerHTML = '<em>Ali Havizni</em>';
+
+// const sectionA = document.querySelector('section#a');
+// sectionA.innerHTML = 'Hello World!';
+
+// element.style.<propertyCSS>
+const btn = document.querySelector('button');
+btn.style.borderRadius = '20%';
+
+// element.setAttribute()
+// const judul = document.getElementsByTagName('h1')[0];
+// judul.setAttribute('name', 'ali');
+// const linkA = document.querySelector('section#a a');
+
+// element.classList
+// element.classList.add()
+const p2 = document.querySelector('.p2');
+p2.classList.add('label');
+
+// element.classList.remove()
+p2.classList.remove('label');
+
+// node.appendChild()
+// Buat element baru / document.createElement()
+const newParagraf = document.createElement('p');
+// Buat isi element yang ingin dibuat / document.createTextNode()
+const newTextPargraf = document.createTextNode('Ini Paragraf Baru.');
+// Simpan tulisan ke dalam paragraf / Element dan isi nya yang sudah dibuat
+newParagraf.appendChild(newTextPargraf);
+// Simpan newParagraf / Element dan isi nya yang sudah dibuat dan sudah dirangkai di akhir Section A
+// Tangkap / menyeleksi parent yang bersangkutan
+const sectionA = document.getElementById('a');
+sectionA.appendChild(newParagraf);
+
+
+// node.insertBefore()
+// Membuat li baru dan menyimpan nya sesudah li1 sebelum li2
+const newLi = document.createElement('li');
+const newItem = document.createTextNode('Ini item baru');
+newLi.appendChild(newItem);
+// Mengetahui parent dari element html yang ingin disimpan
+const ul = document.querySelector('section#b ul');
+// Mengambil element setelah nya
+const liDua = ul.querySelector('li:nth-child(2)');
+// Menyimpan element yang sudah dibuat untuk disisipkan diantara element li1 li2
+ul.insertBefore(newLi, liDua);
+
+
+// parentNode.removeChild() 
+// Tangkap / menyeleksi element yang ingin dihapus
+const linkA = document.querySelector('section#a a');
+sectionA.removeChild(linkA);
+
+
+// parentNode.replaceChild()
+// Tangkap / menyeleksi parent yang bersangkutan
+const sectionB = document.getElementById('b');
+// Tangkap / menyeleksi element yang ingin diganti / replace
+const paragrafEmpat = sectionB.querySelector('p');
+const newH2 = document.createElement('h2');
+const newTextH2 = document.createTextNode('Judul Baru!');
+newH2.appendChild(newTextH2);
+sectionB.replaceChild(newH2, paragrafEmpat);
+
+
+newParagraf.style.backgroundColor = 'orange';
+newLi.style.backgroundColor = 'violet';
+newH2.style.backgroundColor = 'lightskyblue';
+
+</script>
+</body>
+</html>

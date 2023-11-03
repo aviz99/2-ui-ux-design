@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Case 1 DOM Play With Color</title>
+    <style>
+
+    html, body {
+        height: 100%;
+    }
+
+    body {
+        text-align: center;
+    }
+
+    .slider {
+        width: 25px;
+        height: 25px;
+        margin: 10px auto;
+    }
+
+    .red {
+        background-color: red;
+    }
+
+    .green {
+        background-color: green;
+    }
+
+    .blue {
+        background-color: blue;
+    }
+
+    .light-green {
+        background-color: lightgreen;
+    }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Play With Color</h1>
+
+    <button type="button" id="btn-color">Change Color</button>
+
+    <br><br>
+
+    <div class="red slider"></div>
+    <input type="range" name="red" min="0" max="255">
+
+    <div class="green slider"></div>
+    <input type="range" name="green" min="0" max="255">
+
+    <div class="blue slider"></div>
+    <input type="range" name="blue" min="0" max="255">
+
+
+<script src="script.js"></script>
+</body>
+</html>

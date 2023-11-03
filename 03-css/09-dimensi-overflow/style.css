@@ -1,0 +1,23 @@
+/* Dimensi & Overflow */
+/* % satuan ukuran relatif terhadap element pembungkus nya (parent) atau browser */
+/* Overflow sebuah properti css yang berguna untuk mengatur perilaku element content child nya keluar dari elemen parent-nya */
+/* Nilai Overflow : visible, auto, hidden, scroll */
+
+.satu {
+    width: 200px;
+    height: 200px;
+    background-color: aquamarine;
+}
+
+.dua {
+    width: 120%;
+    background-color: burlywood;
+}
+
+.tiga {
+    width: 200px;
+    height: 200px;
+    margin-top: 20px;
+    background-color: lightsalmon;
+    overflow: scroll;
+}

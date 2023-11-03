@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan String Literal Template</title>
+</head>
+<body>
+    
+
+<script>
+    // Template Litearals / String Template
+    // const name = 'Ali';
+    // const age = 26;
+    // console.log(`Halo, nama saya ${name} saya berumur ${age} tahun.`);
+
+    // Embedded Expression
+    // console.log(`${1 + 1}`);
+    // console.log(`${alert("Asu Tenan")}`);
+    // const x = 11;
+    // console.log(`${(x % 2 == 0) ? 'Genap' : 'Ganjil'}`);
+
+    // HTML Fragments
+    const person = {
+        name: 'Ali Havizni',
+        age: 26,
+        job: 'freelancer',
+        email: 'ahavizni@gmail.com'
+    };
+
+    const el = `<div class="person">
+            <h2>${person.name}</h2>
+            <span class="job">${person.job}</span>
+        </div>`;
+
+        console.log(el);
+
+</script>
+</body>
+</html>

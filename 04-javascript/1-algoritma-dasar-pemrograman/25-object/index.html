@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Object</title>
+</head>
+<body>
+    
+<script>
+
+// Object
+// Literal
+let person = {
+    name: "Ali Havizni",
+    age: 26,
+    job: "Freelance",
+    hobby: ["Gaming","Soccer","Basketball"],
+    address: {
+        street: "Jl. apa aja no.321",
+        city: "Jakarta",
+        country: "Indonesia"
+    }
+};
+
+// Function Declaration
+function buatObjectPerson(name,age,job,hobby,address) {
+    let person = {};
+    person.name = name;
+    person.age = age;
+    person.job = job;
+    person.hobby = hobby;
+    person.address = address;
+    return person;
+}
+
+let person2 = buatObjectPerson("Ahmad Darojat",25,"Pengangguran","Maling","Jakarta");
+let person3 = buatObjectPerson("Silvia Febri Anggraini",23,"Dancer","Flirt","Lampung");
+
+// Constructor
+function Person(name,age,job,hobby,address) {
+    this.name = name;
+    this.age = age;
+    this.job = job;
+    this.hobby = hobby;
+    this.address = address;
+}
+
+let person4 = new Person("Dissiedhewa Vajarro Siahaan",23,"Peternak Babi","Main Mobel Lejen","Madiun");
+
+</script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+/* Columns & Rows */
+/* grid-template-columns & grid-template-rows */
+/* Mendefinisikan kolom / baris dengan cara menuliskan nilai dipisahkan oleh spasi. Nilai merepresentasikan ukuran grid track dan spasi merepresentasikan grid line. */
+/* grid-template-columns: track-size ... | line-name track-size; */
+/* grid-template-rows: track-size ... | line-name track-size; */
+/* track-size = px, %, auto, fr */
+/* line-name = nama yang bisa diberikan pada track. */
+/* grid-template-columns: [awal] 25% [kolom2] auto [kolom3] 50px [empat]; */
+/* grid-template-rows: [barisAwal] 50px [baris2] 100px [baris3] auto [barisAkhir]; */
+/* Explicit Grid = ketika kita menuliskan jelas ukuran dari grid nya (kolom & baris).*/
+/* Implicit Grid = Ketika grid nya menentukan secara otomatis sisa dari kolom & baris yang tidak kita tentukan dengan explicit. */
+/* grid-auto-columns & grid-auto-rows = Mengatur ukuran grid track yang tidak dituliskan pada grid-template (implicit track) */
+/* grid-auto-columns: track-size; */
+/* grid-auto-rows: track-size; */
+/* grid-auto-flow = Mengatur penempatan item / cell pada grid track, termasuk yang ditulis secara implicit */
+/* grid-auto-flow: row | column | row dense | column dense; */
+/* fr / Fraction */
+/* grid-template-columns: 1fr 2fr 3.5fr; */
+/* grid-template-rows: 2fr 1fr 5fr; */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-columns: 100px 25% 200px; */
+    /* Mengatur Explicit */
+    /* grid-template-columns: 100px 50px; */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    grid-template-columns: 1fr 2fr 50px;
+    /* grid-template-rows: 50px 100px 150px; */
+    /* grid-template-rows: 50px 30px; */
+    /* Mengatur Explicit */
+    /* Mengatur Implicit */
+    /* grid-auto-rows: 200px; */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 200px; */
+    /* Mengatur Implicit */
+}
+
+.item {
+    background-color: rgb(138, 289, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

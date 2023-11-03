@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Arrow Function</title>
+</head>
+<body>
+    
+
+
+<script>
+    // Function Expression
+    // const sayName = function(name) {
+    //     return `Halo ${name}, Have a Nice Day.`;
+    // }
+
+    // console.log(sayName("Ucup"));
+
+
+
+    // Arrow Function
+    // const sayName = (name) => { return `Halo ${name}, Have a Nice Day.`}
+    // console.log("Firman");
+
+
+    // const tampilNama = (name,time) => {
+    //     return `Selamat ${time}, Pak ${name}`;
+    // }
+    // console.log(tampilNama("Yanto","Siang"));
+
+
+    // Implisit Return
+    // const sayName = name => `Halo ${name}, Have a Nice Day.`;
+    // console.log("Firman");
+
+
+    // const tampilApaAja = () => "Hello World!";
+    // console.log(tampilApaAja());
+
+    let mahasiswa = ["Ali","Amanda","Cantika"];
+
+    // let jumlahNama = mahasiswa.map(function(name){
+    //     return name.length;
+    // });
+    // console.log(jumlahNama);
+
+
+    // let jumlahHuruf = mahasiswa.map(name => name.length);
+    // console.log(jumlahHuruf);
+    
+    let jumlahHuruf = mahasiswa.map(name => ({ name, jmlhName: name.length }));
+    console.table(jumlahHuruf);
+    
+</script>
+</body>
+</html>

@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Higher Order Function</title>
+</head>
+<body>
+    
+
+<script>
+    // Higher Order Function
+    function tugasAkhir(skripsi,selesai) {
+        console.log(`Silahkan mengerjakan ${skripsi} ...`);
+        // Callback
+        selesai();
+    }
+
+    // Callback
+    function selesai() {
+        alert("Selesai mengerjakan skripsi!");
+    }
+
+    tugasAkhir("Pencitraan Objek Berbasis Augmented Reality",selesai);
+</script>
+</body>
+</html>

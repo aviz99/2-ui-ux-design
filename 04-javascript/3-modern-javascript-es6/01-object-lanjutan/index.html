@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Object Create</title>
+</head>
+<body>
+    
+<script>
+
+// Cara untuk membuat object pada javascript
+    
+// 1, Object Literal
+// let student1 = {
+//     name: "Ali Havizni",
+//     energy: 10,
+//     eat: function(serving) {
+//         this.energy = this.energy + serving;
+//         console.log(`Halo ${this.name}, selamat makan.`);
+//     }
+    
+// }
+// let student2 = {
+//     name: "Nanang",
+//     energy: 10,
+//     eat: function(serving) {
+//         this.energy = this.energy + serving;
+//         console.log(`Halo ${this.name}, selamat makan.`);
+//     }
+// }
+
+// 2. Object Function Declaration
+// function Student(name,energy) {
+//     let student = {};
+//     student.name = name;
+//     student.energy = energy;
+//     student.eat = function(serving) {
+//         this.energy += serving;
+//         console.log(`Halo ${this.name}, Selamat Makan.`);
+//     }
+
+//     student.play = function(hours) {
+//         this.energy -= hours;
+//         console.log(`Halo ${this.name}, Kamu dikurangi energy mu karena Main Game!!!`);
+//     }
+
+//     return student;
+// }
+
+// let person1 = Student('Ali', 10);
+// let person2 = Student('Usman', 10);
+// let person3 = Student('Jepri', 10);
+
+// 3. Object Constructor
+function Student(name,energy) {
+    this.name = name;
+    this.energy = energy;
+    this.eat = function(serving) {
+        this.energy += serving;
+        console.log(`Halo ${this.name}, Selamat Makan.`);
+    }
+    this.play = function(hours) {
+        this.energy -= hours;
+        console.log(`Halo ${this.name}, Kamu dikurangi energy mu karena Main Game!!!`);
+    }
+}
+let person1 = new Student('Dadang', 10);
+let person2 = new Student('Eman', 10);
+let person3 = new Student('Pepen', 10);
+// 4. Object.create()
+
+</script>
+</body>
+</html>

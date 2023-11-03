@@ -1,0 +1,136 @@
+/* Pseudo-Element ::before ::after */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background-color: cadetblue;
+    font-size: 1rem;
+}
+
+div::after {
+    content: " World!";
+}
+
+div::before {
+    content: "Hi,";
+} */
+
+/* div {
+    width: 100px;
+    height: 100px;
+    background: lightgreen;
+    position: relative;
+    margin: 20px auto;
+}
+
+div::before,
+div::after {
+    content: "";
+    width: 30px;
+    height: 30px;
+    position: absolute;
+}
+
+div::before {
+    top: -15px;
+    left: -15px;
+    background-color: aqua;
+}
+
+div::after {
+    right: -15px;
+    bottom: -15px;
+    background-color: lightpink;
+}
+
+h1::before {
+    content: "";
+    display: block;
+    background: url(img/coding-resize.png) no-repeat;
+    background-size: 20px;
+    width: 20px;
+    height: 20px;
+    float: left;
+    margin: 8px 5px 0 0;
+}
+
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    color: #000;
+}
+
+a::after {
+    content: " /";
+}
+
+a:first-child::before {
+    content: " :: ";
+}
+
+a:last-child::after {
+    content: "";
+} */
+
+blockquote {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-style: italic;
+    margin-top: 50px;
+    line-height: 1.4em;
+    position: relative;
+}
+
+blockquote::before,
+blockquote::after {
+    content: open-quote;
+    font-size: 60px;
+    color: #999;
+    line-height: 0;
+    position: relative;
+    top: 20px;
+}
+
+blockquote::after {
+    content: close-quote;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+}
+
+h2 {
+    float: left;
+    width: 170px;
+}
+
+div {
+    float: left;
+    width: 200px;
+    background: #727272;
+    padding: 10px;
+    border-radius: 6px;
+    color: #fff;
+    position: relative;
+    font-size: 12px;
+    line-height: 20px;
+}
+
+div::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 0;
+    border-top: 12px solid transparent;
+    border-bottom: 12px solid transparent;
+    border-right: 12px solid #727272;
+    position: absolute;
+    top: 16px;
+    left: -12px;
+}

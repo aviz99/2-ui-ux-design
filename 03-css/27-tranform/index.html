@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Transform</title>
+	<style>
+	/* Transform */
+	/* Properti transform memungkinkan kita dapat memanipulasi format visual dari eleman HTML bisa ukuran, bentuk dari elemennya dan posisinya */
+	/* Bentuk Transformasi ada 2D dan 3D */
+	/* transform : <fungsinya>(scale:memperbesar/memperkecil(angka)),(scaleX:memperbesar/memperkecil secara horizontal(angka)), (scaleY:memperbesar/memperkecil secara vertikal(angka)), (rotate:memutar(deg)), (rotateX:memutar secara horizontal(deg)), (rotateY:memutar secara vertikal(deg)), (skew:membuat condong miring(deg)), (skewX:membuat condong miring secara horizontal(deg)), (skewY:membuat condong miring secara vertikal(deg)), (translate:mengubah posisi(px)), (translateX:mengubah posisi secara horizontal(px)), (translateY:mengubah posisi secara vertikal(px)); */
+		p {
+			font-size: 20px;
+			text-align: center;
+		}
+
+		.kotak {
+			width: 200px;
+			height: 200px;
+			background-color: cadetblue;
+			margin: 50px auto;
+			transition: 1s;
+		}
+
+		.kotak:hover {
+			/* transform: scaleX(1.5) scaleY(2); */
+			/* transform: rotateY(180deg) rotateX(180deg) rotateY(180deg); */
+			/* transform: skewY(-30deg); */
+			/* transform: translateX(50px) translateY(100px); */
+			transform: scale(3) rotate(360deg);
+		}
+	</style>
+</head>
+<body>
+	
+	<div class="kotak"></div>
+	<p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt, libero. Quisquam expedita neque quas eligendi omnis harum nihil nisi temporibus dicta velit similique, perferendis sapiente at. Illum commodi, sapiente illo.</p>
+
+</body>
+</html>

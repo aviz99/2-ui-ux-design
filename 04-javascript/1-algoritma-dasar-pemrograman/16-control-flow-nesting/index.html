@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Nested Conditional & Iteration Statement</title>
+</head>
+<body>
+    
+<script>
+
+// Nested Conditional & Iteration Statement
+// var s = '';
+// for( var i = 10; i > 0; i-- ) {
+//     for( var j = 0; j < i; j++) {
+//         s += '*';
+//     }
+//     s += '\n';
+// }
+// console.log(s);
+
+// var s = '';
+// for( var i = 0; i < 10; i++ ) {
+//     for( var j = 0; j < i; j++) {
+//         s += '*';
+//     }
+//     s += '\n';
+// }
+// console.log(s);
+
+// var s = '';
+// for(var i = 1; i <= 9; i++) {
+//     for(var y = 1; y <= 9 - i; y++) {
+// 	    s += ' ';
+//     }
+//     for(var j = 1; j < 2 * i; j++) {
+//         s += '*';
+//     }
+//     s += '\n';
+// }
+// console.log(s);
+
+var s = '';
+for( var i = 0; i < 9; i++ ) {
+    if ( i < 5 ) {
+        for( var g = 0; g <= i; g++ ) {
+            s += '*';
+        }
+    } else {
+        for( var j = 9; j > g; j-- ) {
+            s += '*';
+        }
+    }
+    s += '\n';
+}
+console.log(s);
+
+</script>
+</body>
+</html>

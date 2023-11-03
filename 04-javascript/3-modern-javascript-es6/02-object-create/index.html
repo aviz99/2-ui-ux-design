@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Object Create</title>
+</head>
+<body>
+    
+
+
+
+<script>
+    // Object.create()
+    const methodStudent = {
+        eat: function(serving) {
+            this.energy += serving;
+            console.log(`Halo ${this.name}, Selamat Makan.`);
+        },
+
+        play: function(hours) {
+            this.energy -= hours;
+            console.log(`Kamu Ketahuan ${this.name}, Karena Kamu Ketahuan Bermain Game!!!`);
+        },
+
+        sleep: function(hours) {
+            this.energy += hours;
+            console.log(`Waktu nya tidur ${this.name}.`);
+        }
+    };
+
+    function Student(name, energy) {
+        let student = Object.create(methodStudent);
+        student.name = name;
+        student.energy = energy;
+
+        return student;
+    }
+
+    let person1 = Student('Ali', 10);
+    let person2 = Student('Havizni', 10);
+</script>
+</body>
+</html>

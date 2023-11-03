@@ -1,0 +1,61 @@
+/* CSS GRID Special Keywords & Functions */
+/* repeat() = Untuk menentukan ukuran grid track secara secara berulang. */
+/* grid-template-columns: repeat(jumlahColumns, ukuranColumns) */
+/* grid-template-rows: repeat(jumlahRows, ukuranRows) */
+/* min-content & max-content = Untuk menetukan seberapa besar ukuran grid track berdasarkan content pada sebuah item. */
+/* grid-template-rows: min-content | max-content */
+/* grid-template-columns: min-content | max-content */
+/* auto-fill & auto-fit = Untuk menentukan jumlah item untuk berada pada grid track. */
+/* grid-template-columns: repeat(auto-fit, jumlahColumns, ukuranColumns) */
+/* grid-template-rows: repeat(auto-fit, jumlahRows, ukuranRows) */
+/* grid-template-columns: repeat(auto-fill, jumlahColumns, ukuranColumns) */
+/* grid-template-rows: repeat(auto-fill, jumlahRows, ukuranRows) */
+/* minmax() = Untuk menentukan ukuran minimal & maksimal dari grid track. */
+/* grid-template-rows: minmax(minimalUkuranRows, maksimalUkuranRows) */
+/* grid-template-columns: minmax(minimalUkuranColumns, maksimalUkuranColumns)  */
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #dddd;
+}
+
+.container {
+    width: 60%;
+    margin: 50px auto;
+    display: grid;
+    /* border: 5px solid orange; */
+    /* grid-template-columns: 100px 25% 200px; */
+    /* Mengatur Explicit */
+    /* grid-template-columns: 100px 50px; */
+    /* grid-template-columns: 1fr 2fr 3fr; */
+    /* grid-template-columns: 1fr 2fr 50px; */
+    /* grid-template-columns: repeat(9, 1fr); */
+    /* grid-template-columns: repeat(4, 1fr) repeat(5, 2fr); */
+    /* grid-template-columns: 1fr min-content 1fr; */
+    /* grid-template-columns: repeat(auto-fit, 100px); */
+    grid-template-columns: 1fr minmax(200px, 300px) 1fr;
+    /* grid-template-columns: repeat(auto-fill, 100px); */
+    /* grid-template-columns: 1fr max-content 1fr; */
+    /* grid-template-rows: 50px 100px 150px; */
+    /* grid-template-rows: 50px 30px; */
+    /* Mengatur Explicit */
+    /* Mengatur Implicit */
+    /* grid-auto-rows: 200px; */
+    /* grid-auto-flow: column; */
+    /* grid-auto-columns: 200px; */
+    /* Mengatur Implicit */
+}
+
+.item {
+    background-color: rgb(138, 289, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}

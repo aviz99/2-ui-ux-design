@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript This Object</title>
+</head>
+
+<body>
+
+    <script>
+
+        // This Object
+        // This
+        // Case 1 Object Declaration
+        // function sayHello() {
+        //     console.info(this);
+        //     console.info("Hello");
+        // }
+
+        // this.sayHello();
+        // This mengembalikan object global
+
+        // Case 2 Object Literal
+        // let obj = {}
+        // obj.sayHello = function() {
+        //     console.info(this);
+        //     console.info("Hello");
+        // }
+
+        // obj.sayHello();
+        // This mengembalikan object yang bersangbkutan
+
+        // Case 3 Object Constructor
+        function SayHello() {
+            console.info(this);
+            console.info("Hello");
+        }
+
+        new SayHello()
+// This mengembalikan object yang baru dibuat
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+/* Selector */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1, h2 {
+  color: lime;
+}
+
+ul li a {
+  color: orange;
+}
+
+ol li a {
+  color: crimson;
+}
+
+#p1 {
+  color: darkorchid;
+}
+
+.p2 {
+  color: cadetblue;
+}
+
+.cetak-tebal{
+  font-weight: bold;
+}
+
+p.cetak-tebal {
+  font-size: 30px;
+}

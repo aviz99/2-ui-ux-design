@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Study Case 3 Object</title>
+</head>
+<body>
+    
+<script>
+
+// Study Case 3 Object
+// Object Angkot
+function Angkot(supir,trayek,penumpang,kas) {
+    this.supir = supir;
+    this.trayek = trayek;
+    this.penumpang = penumpang;
+    this.kas = kas;
+
+    // Jika penumpang ingin naik
+    this.penumpangNaik = function(namaPenumpang) {
+        this.penumpang.push(namaPenumpang);
+        return this.penumpang;
+    }
+
+    // Cek apakah angkot masih kosong
+    this.penumpangTurun = function(namaPenumpang,bayar) {
+        if(this.penumpang.length === 0) {
+            console.info("Angkot masih kosong.");
+            return false;
+        }
+
+        // Jika ada nama penumpang yang ingin turun
+        for(let i = 0; i < this.penumpang.length; i++) {
+            // Cek penumpang yang ingin turun dan kas bertambah
+            if(this.penumpang[i] == namaPenumpang) {
+                this.penumpang[i] = undefined;
+                this.kas += bayar;
+                return this.penumpang;
+            }
+        }
+    }
+}
+
+let angkot1 = new Angkot("Darojat",["Cicaheum","Cibiru"],[],0);
+let angkot2 = new Angkot("Rahmat Aji Muktar",["Antapani","Ciroyom"],[],0);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Closures</title>
+</head>
+<body>
+    
+
+
+<script>
+    // Closures
+    // function init() {
+    //     // let nama = "Ali";
+    //     return function(nama) {
+    //         console.log(nama);
+    //     }
+    // }
+
+    // let panggilNama = init();
+    // panggilNama("Havizni");
+    // panggilNama("Ucah");
+
+
+
+
+
+
+
+
+
+
+    // Factory Function
+    // function sayHi(time) {
+    //     return function(name) {
+    //         console.log(`Hi ${name}, Selamat ${time} Semoga Hari Mu Menyenangkan.`);
+    //     }
+    // }
+
+    // let goodMorning = sayHi("Pagi");
+    // let goodEvening = sayHi("Siang");
+    // let goodNight = sayHi("Malam");
+
+    // goodMorning("Ali");
+    // goodEvening("Ali");
+    // goodNight("Ali");
+
+    // console.dir(goodNight);
+
+
+
+
+
+
+
+
+
+
+
+    // Private Method
+    let add = (function() {
+        let counter = 0;
+        return function () {
+            return ++counter;
+        }
+    })();
+
+    counter = 100;
+
+    console.log(add());
+    console.log(add());
+    console.log(add());
+    console.log(add());
+    console.log(add());
+</script>
+</body>
+</html>

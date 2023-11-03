@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <title>CSS3 Box Shadow</title>
+    <style>
+	/* Box-Shadow */
+	/* Nilai dari box-shadow : inset(bayangannya berada ada didalam kotaknya),x-offset(menentukan jarak bayangan pada sumbu horizontal),y-offset(menentukan jarak bayangan pada sumbu vertikal),blur,spread(ukuran dari bayangannya),color */
+	.satu {
+		width: 300px;
+		height: 300px;
+		background-color: hsl(144, 100%, 50%);
+		margin: 50px auto;
+		/* box-shadow: inset 0 0 15px 5px rgba(0, 0, 0, .5); */
+		box-shadow: 0px 30px 10px -20px rgba(0, 0, 0, .75);;
+		transition: .3s;
+	}
+
+	.satu:hover {
+		box-shadow: 0px 80px 10px -40px rgba(0, 0, 0, .15);
+		margin-top: 40px;
+	}
+
+    .dua {
+		width: 300px;
+		height: 300px;
+		background-color: gold;
+		margin: 50px auto;
+		box-shadow: 0px 0px 0px 5px red, 0px 0px 0px 10px blue, 0px 0px 0px 15px green, 0px 0px 0px 20px orange, 0px 0px 0px 25px yellow, 0px 0px 0px 30px purple, 0px 0px 0px 35px cyan;
+		border-radius: 0;
+    }
+
+    </style>
+</head>
+<body>
+    <div class="satu"></div>
+    <div class="dua"></div>
+</body>
+</html>

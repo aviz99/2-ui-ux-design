@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Async Await</title>
+</head>
+<body>
+    
+<script>
+    // const coba = new Promise(resolve => {
+    //     setTimeout(() => {
+    //         resolve('selesai');
+    //     }, 2000);
+    // });
+    // console.log(coba);
+    // coba.then(() => console.log(coba));
+    
+
+
+    function cobaPromise() {
+        return new Promise((resolve, reject) => {
+            const waktu = 5000;
+            if ( waktu < 5000) {
+                setTimeout(() => {
+                    resolve('selesai');
+                }, 2000);
+            } else {
+                reject('waktu sudah melewati batas!!!')
+            }
+        });
+    }
+
+    // const coba = cobaPromise();
+    // coba
+    //     .then(coba => console.log(coba))
+    //     .catch(coba => console.log(coba));
+
+    // Async & Await
+    async function cobaAsing() {
+        try {
+            const coba = await cobaPromise();
+            console.log(coba);
+        } catch(error) {
+            console.error(error);
+        }
+    }
+
+    cobaAsing();
+</script>
+</body>
+</html>

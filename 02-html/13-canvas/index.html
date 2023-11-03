@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Canvas</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+<body>
+    <!-- Canvas -->
+
+    <canvas id="mycanvas"></canvas>
+    <!-- Canvas API -->
+    <!-- Rectangle -->
+    <!-- elemCanvas.fillRect(x, y, width, height) -->
+
+
+    <!-- Circle -->
+    <!-- elemCanvas.fillStyle = "Warna"; -->
+    <!-- elemCanvas.strokeStyle = "jenisGaris"; -->
+    <!-- elemCanvas.lineWidth = ukuranKetebalanGaris; -->
+    <!-- elemCanvas.arc(x, y, radius, startAngle, endAngle) -->
+    <!-- elemCanvas.fill() -->
+    <!-- elemCanvas.stroke() -->
+
+    <!-- Path -->
+    <!-- elemCanvas.fillStyle = "Warna"; -->
+    <!-- elemCanvas.strokeStyle = "jenisGaris"; -->
+    <!-- elemCanvas.lineWidth = ukuranKetebalanGaris; -->
+    <!-- elemCanvas.beginPath() -->
+    <!-- elemCanvas.moveTo(x, y) -->
+    <!-- elemCanvas.lineTo(x, y) -->
+    <!-- elemCanvas.lineTo(x, y) -->
+    <!-- elemCanvas.lineTo(x, y) -->
+    <!-- elemCanvas.fill() -->
+    <!-- elemCanvas.stroke() -->
+<script>
+// Menyiapkan canvas
+const myCanvas = document.getElementById('mycanvas');
+
+// // atur ukuran canvas
+myCanvas.width = window.innerWidth;
+myCanvas.height = window.innerHeight;
+
+// // tentukan context
+const c = myCanvas.getContext('2d');
+
+// // manipulasi canvas
+
+// // Rectangle
+// c.fillStyle = "lightskyblue";
+// c.strokeStyle = "#999";
+// c.lineWidth = '5';
+
+// c.rect(50, 50, 300, 300);
+// c.fill();
+// c.stroke();
+
+// // Circle
+// c.fillStyle = "lightgreen";
+// c.beginPath();
+// c.arc(550, 200, 150, 0, 2 * Math.PI);
+// c.fill();
+// c.stroke();
+
+// // Path
+// c.fillStyle = "salmon";
+// c.beginPath();
+// c.moveTo(900, 50);
+// c.lineTo(1050, 350);
+// c.lineTo(750, 350);
+// c.lineTo(900, 50);
+// c.closePath();
+// c.fill();
+// c.stroke();
+
+let x = 300;
+let y = 200;
+let speedX = 5;
+let speedY = 5;
+let radius = 150;
+
+function draw() {
+    window.requestAnimationFrame(draw);
+    // elemCanvas.clearRect(x, y, methodWidth, methodHeight);
+    c.clearRect(0, 0, innerWidth, innerHeight);
+    c.fillStyle = "lightgreen";
+    c.beginPath();
+    c.arc(x, y, radius, 0, 2 * Math.PI);
+    c.fill();
+    c.stroke();
+
+    if ( x + radius > innerWidth || x - radius < 0 ) {
+        speedX = -speedX;
+    }
+
+    if ( y + radius > innerHeight || y - radius < 0 ) {
+        speedY = -speedY;
+    }
+
+    x += speedX;
+    y += speedY;
+}
+
+draw();
+</script>
+</body>
+</html>

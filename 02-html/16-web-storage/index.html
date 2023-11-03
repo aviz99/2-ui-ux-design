@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Web Storage</title>
+    <style>
+        a {
+            color: inherit;
+        }
+
+        .dark-mode {
+            background-color: #222;
+            color: #fff;
+        }
+    </style>
+</head>
+<body>
+    <h1>Hallo Ali!</h1>
+
+    <a href="" onclick="changeName()">Ganti Nama</a>
+    <a href="" onclick="removeName()">Hapus Nama</a>
+    <a href="" class="btn-dark">Dark Mode</a>
+    <a href="" onclick="removeStorage()">Hapus Storage</a>
+
+<script>
+    const title = document.querySelector('h1');
+    let name = localStorage.getItem('nama');
+    if(!name) {
+        name = prompt('Masukkan nama anda: ');
+        localStorage.setItem('nama', name);
+    }
+
+    title.textContent = `Halo, ${name}!`;
+
+    // Ganti Nama
+    const changeName = (e) => {
+        name = prompt('Masukkan nama baru anda: ');
+        localStorage.setItem('nama', name);
+        e.preventDefault();
+    }
+
+    // Hapus Storage
+    const removeStorage = (e) => {
+        localStorage.clear();
+        e.preventDefault();
+    }
+
+    // Hapus Nama
+    const removeName = (e) => {
+        localStorage.removeItem('nama');
+        e.preventDefault();
+    }
+
+    // Tombol Dark Mode
+    const btnDark = document.querySelector('.btn-dark');
+    let tema = localStorage.getItem('tema');
+
+    if(!tema) {
+        localStorage.setItem('tema', 'light');
+    }
+
+    const darkMode = () => {
+        document.body.classList.add('dark-mode');
+        btnDark.innerHTML = 'Light Mode';
+        localStorage.setItem('tema', 'dark');
+    }
+
+    const lightMode = () => {
+        document.body.classList.remove('dark-mode');
+        btnDark.innerHTML = 'Dark Mode';
+        localStorage.setItem('tema', 'light');
+    }
+
+    if(tema === 'dark') {
+        darkMode();
+    }
+
+    btnDark.addEventListener('click', (e) => {
+        tema = localStorage.getItem('tema');
+        if(tema === 'light') {
+            darkMode();
+        } else {
+            lightMode();
+        }
+        e.preventDefault();
+    });
+</script>
+</body>
+</html>

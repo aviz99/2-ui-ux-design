@@ -1,0 +1,95 @@
+/* CSS GRID GRID Gap & GRID Area */
+/* grid-template-area = mendefinisikan grid template menggunakan nama dari area yang ditulis pada property grid-area pada item. */
+/* grid-template-area: "nama-area | none | '.' " "nama-area nama-area" */
+/* bisa dicontainer dan itemnya */
+/* grid-template = Shorthand untuk mendefinisikan grid-template-columns, grid-template-rows, & grid-template-areas dalam satu deklarasi. */
+/* grid-template: grid-template-rows | grid-template-areas / grid-template-columns; */
+/* grid-gap = grid-column-gap & grid-row-gap (old) column-gap & row-gap (new) = Mendefinisikan ukuran grid-line / jarak antara baris atau kolom */
+/* grid-column-gap: line-size */
+/* grid-row-gap: line-size */
+/* column-gap: line-size */
+/* row-gap: line-size */
+/* grid-gap & gap = Shorthand untuk mendefinisikan column-gap & row-gap dalam satu deklarasi */
+/* grid-gap: row-gap column-gap */
+/* gap: row-gap column-gap */
+/* grid = Shorthand untuk mendefinisikan properti-properti berikut dalam satu deklaarasi yaitu grid-template-rows, grid-template-columns, grid-template-areas, grid-auto-rows, grid-auto-columns, & grid-auto-flow. */
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    /* width: 80%; */
+    /* width: 60%; */
+    width: 90%;
+    margin: 50px auto;
+    display: grid;
+    /* grid-template-rows: [baris1-awal] 50px
+    [baris1-akhir baris2-awal] 100px [baris2-akhir];
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-template-areas: 
+                        'header' 'header' 'header'
+                        'footer' 'footer' 'footer'; */
+    /* grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas:
+                        'header header header'
+                        'sidebar sidebar sidebar'
+                        'content content content'
+                        'footer footer footer'; */
+    /* grid-template: [baris1-awal] 'header header header' 50px [baris1-akhir baris2-awal] 'footer footer footer' 100px [baris2-akhir] / 1fr 2fr 3fr; */
+    grid-template-columns: repeat(3, 1fr);
+    /* grid-column-gap: 10px; */
+    /* grid-row-gap: 10px; */
+    /* column-gap: 10px;
+    row-gap: 10px; */
+    /* grid-gap: 10px; */
+    gap: 10px;
+}
+
+.item {
+    /* width: 100%; */
+    background-color: rgb(138, 289, 254);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* padding: 100px; */
+    box-sizing: border-box;
+    padding: 100px;
+}
+
+.item:nth-child(even) {
+    background-color: rgb(255, 142, 142);
+}
+
+/* .header {
+    grid-area: header;
+    background-color: darkolivegreen;
+}
+
+.sidebar {
+    grid-area: sidebar;
+    background-color: gold;
+}
+
+.content {
+    grid-area: content;
+    background-color: orangered;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: darkslategrey;
+} */
+
+/* Responsive Breakpoint */
+/* @media screen and (min-width: 576px) {
+    .container {
+        grid-template-areas:
+                            'header header header'
+                            'sidebar content content'
+                            'sidebar content content'
+                            'footer footer footer';
+    }
+} */

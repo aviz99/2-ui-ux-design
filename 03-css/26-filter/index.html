@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS3 Filter</title>
+	<style>
+	/* Filter */
+	/* filter: blur(px) */
+	/* filter: brightness(angka(0 - 8000%/ 0 - 800) | %) */
+	/* filter: contrast(angka(0 - 8000%/ 0 - 800) | %) */
+	/* filter: saturate(angka | %) */
+	/* filter: grayscale(angka | %) */
+	/* filter: sepia(angka | %) */
+	/* filter: hue-rotate(deg) */
+	/* filter: invert(angka | %) */
+	/* filter: opacity(angka | %) */
+	/* filter: drop-shadow(inset, x-offset, y-offset, blur, spread, color) */
+	body {
+		text-align: center;
+	}
+
+	img {
+		/* filter: blur(10px);
+		filter: brightness(1.5);
+		filter: contrast(150%);
+		filter: saturate(150%);
+		filter: grayscale(150%);
+		filter: sepia(100%);
+		filter: hue-rotate(100deg);
+		filter: invert(100%);
+		filter: opacity(.5);
+		filter: drop-shadow(5px 5px 5px black); */
+		filter: blur(5px) grayscale(100%);
+		transition: 1s;
+	}
+
+	img:hover {
+		filter: blur(0) grayscale(0);
+		cursor: pointer;
+	}
+
+	/* h1 {
+		filter: drop-shadow(5px 5px 5px #333);
+	} */
+	</style>
+</head>
+<body>
+	
+	<!-- <h1>ALI HAVIZNI</h1> -->
+	<img src="ayangku.png" alt="image">
+
+</body>
+</html>

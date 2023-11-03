@@ -1,0 +1,155 @@
+/* CSS GRID Item Properties */
+/* grid-column-start & grid-column-end  grid-row-start & grid-row-end */
+/* Menentukan tempat dari grid item dengan mengacu pada nomor atau nama grid line yang spesifik. */
+/* grid-column-start: grid-line-nomor | grid-line-nama | span grid-line-nomor | span nama | auto; */
+/* grid-column-end: grid-line-nomor | grid-line-nama | span grid-line-nomor | span grid-line-nama | auto; */
+/* grid-row-start: grid-line-nomor | grid-line-nama | span grid-line-nomor | span grid-line-nama | auto; */
+/* grid-row-end: grid-line-nomor | grid-line-nama | span grid-line-nomor | span grid-line-nama | auto; */
+/* nomor | nama = mengacu pada nomor atau nama yang kita beri pada grid line */
+/* span = memanjang / menambah 2 kolom. */
+/* span nomor = item akan memanjang / melebar sampai sejumlah nomor */
+/* span nama = item akan memanjang / melebar sampai ke nama grid line tertentu */
+/* grid-column & grid-row = Shorthand untuk start & end pada grid-column & grid-row */
+/* grid-column: start-line / end-line | start-line / span grid-line-value */
+/* grid-row: start-line / end-line | start-line / span grid-line-value */
+/* grid-area = Menentukan nama area pada item sesuai dengan template yang sudah dibuat sebelumnya melalui properti grid-template-areas. */
+/* grid-area = Bisa digunakan sebagai shorthand untuk grid-column-start, grid-column-end, grid-row-start, & grid-row-end */
+/* grid-are: nama | row-start / column-start / row-end / column-end; */
+/* justify-self = Mengatur posisi item pada sebuah cell terhadap sumbu horizontal. */
+/* justify-self: start | end | center | stretch; */
+/* default = stretch */
+/* align-self = Mengatur posisi item pada sebuah cell terhadap sumbu vertikal. */
+/* align-self: start | end | center | stretch; */
+/* default = stretch */
+/* place-self = Shorthand posisi item pada sebuah cell terhadap sumbu vertikal dan sumbu horizontal dalam satu deklarasi */
+/* place-self: align-self justify-self */
+/* default = stretch */
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #ddd;
+}
+
+.container {
+    width: 80%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: minmax(200px, 300px) 1fr 1fr;
+    grid-template-rows: repeat(3, 100px);
+    /* grid-template-areas: 
+                        'header header header'
+                        'sidebar content content'
+                        'footer footer footer'; */
+    /* grid-template-columns: [satu] minmax(200px, 300px) [dua] 1fr [tiga] 1fr [empat];
+    grid-template-rows: [baris1] 100px [baris2] 100px [b-3] 100px [b4]; */
+}
+
+.item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* .my-item {
+    grid-column-start: 2;
+    grid-column-end: 4;
+    grid-row-start: 2;
+    grid-row-end: 4;
+
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 2;
+    
+    grid-column-start: 1;
+    grid-column-end: span 3;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+    
+    grid-column-start: satu;
+    grid-column-end: empat;
+    grid-row-start: baris1;
+    grid-row-end: b4;
+
+    grid-column-start: -1;
+    grid-column-end: -2;
+    grid-row-start: -4;
+    grid-row-end: -1;
+
+    grid-column: 2 / 4;
+    grid-row: 2 / 4;
+
+    grid-column: 1 / span 2;
+    grid-row: 1 / span 2;
+
+    grid-column: satu / empat;
+    grid-row: baris1 / b4;
+
+    grid-column: -1 / -2;
+    grid-row: -4 / -1;
+
+    background-color: blue;
+} */
+
+/* .header {
+    grid-area: header;
+    background-color: lightblue;
+}
+
+.sidebar {
+    grid-area: content;
+    background-color: salmon;
+}
+
+.content {
+    grid-area: sidebar;
+    background-color: lightgreen;
+}
+
+.footer {
+    grid-area: footer;
+    background-color: silver;
+} */
+
+.my-item {
+    /* grid-row-start: 2;
+    grid-column-start: 1;
+    grid-row-end: 4;
+    grid-column-end: 3; */
+
+    /* grid-area: 2 / 1 / 4 / 3; */
+
+    /* justify-self: start; */
+    /* justify-self: end; */
+    /* justify-self: center; */
+    /* justify-self: stretch; */
+
+    /* align-self: start; */
+    /* align-self: end; */
+    /* align-self: center; */
+    /* align-self: stretch; */
+
+    /* place-self: start end; */
+    /* place-self: start start; */
+    /* place-self: start; */
+    /* place-self: start center; */
+    /* place-self: start stretch; */
+    /* place-self: end end; */
+    /* place-self: end; */
+    /* place-self: end center; */
+    /* place-self: end stretch; */
+    /* place-self: center center; */
+    /* place-self: center; */
+    /* place-self: center start; */
+    /* place-self: center end; */
+    /* place-self: center stretch; */
+    /* place-self: stretch stretch; */
+    /* place-self: stretch; */
+    /* place-self: stretch start; */
+    /* place-self: stretch end; */
+    place-self: stretch center;
+
+    background-color: blue;
+}

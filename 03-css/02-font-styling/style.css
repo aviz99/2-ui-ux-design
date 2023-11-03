@@ -1,0 +1,12 @@
+/* Font Styling */
+h1 {
+	font-family: arial, verdana, sans-serif;
+	font-variant: normal;
+	font-style: oblique;
+}
+
+p {
+	font-family: georgia, serif;
+	font-size: 20px;
+	line-height: 30px;
+}

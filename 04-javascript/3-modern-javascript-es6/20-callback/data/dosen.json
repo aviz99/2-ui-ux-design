@@ -1,0 +1,36 @@
+[
+    {
+        "nama": "Agus Tanumihardja S.T., MMSi",
+        "idDosen": "123000001",
+        "email": "agustanumihardja0123@gmail.com",
+        "jurusan": "Teknik Informatika"
+    },
+
+    {
+        "nama": "Lydia Pangibulan Sitorus, S.E., MMe",
+        "idDosen": "123001001",
+        "email": "lydiapangibulansitorus321@gmail.com",
+        "jurusan": "Ekonomi"
+    },
+
+    {
+        "nama": "Prof. Hendra Jatmiko, SKD",
+        "nrp": "123002002",
+        "email": "hendrajatmiko456@gmail.com",
+        "jurusan": "Kedokteran"
+    },
+
+    {
+        "nama": "Hadi Saputra Wiyono, SBi",
+        "nrp": "123003003",
+        "email": "hadisaputrawiyono654@gmail.com",
+        "jurusan": "Bisnis"
+    },
+
+    {
+        "nama": "Yuni Indira Catur Yustika, SH",
+        "nrp": "123004004",
+        "email": "yuniicyustika789@gmail.com",
+        "jurusan": "Hukum"
+    }
+]

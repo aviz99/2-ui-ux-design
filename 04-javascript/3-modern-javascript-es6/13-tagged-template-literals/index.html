@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Javascript Lanjutan Tagged Template Literals</title>
+    <style>
+        .hl {
+            background-color: lightskyblue;
+        }
+    </style>
+</head>
+<body>
+    
+
+<script>
+    // Tagged Template
+    // const nama = 'Ali Havizni';
+    // const umur = 26;
+
+    // function coba(strings, ...values) {
+    //     // Cara Biasa
+    //     // let result = '';
+    //     // strings.forEach((str, i) => {
+    //     //     result += `${str}${values[i] || ''}`;
+    //     // });
+    //     // return result;
+
+    //     // Cara reduce / Higher Order Function
+    //     return strings.reduce((result,str,i) => `${result}${str}${values[i] || ''}`, '');
+    // }
+    // const str = coba`Halo, Nama Saya ${nama}, umur saya ${umur} tahun.`
+
+    // console.log(str);
+
+    // Highlight
+    const nama = 'Ali Havizni';
+    const umur = 26;
+    const email = 'ahavizni@gmail.com'
+
+    function highlight(strings, ...values) {
+        // Cara reduce / Higher Order Function
+        return strings.reduce((result,str,i) => `${result}${str}<span class="hl">${values[i] || ''}</span>`, '');
+    }
+
+    const str = highlight`Halo, Nama Saya ${nama}, umur saya ${umur} tahun. email saya adalah : ${email}`
+    document.body.innerHTML = str;
+</script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+/* Position */
+/* Position memungkinkan kita untuk menggeserkan sebuah element tanpa mempengaruhi element disekitarnya */
+/* Default nya adalah static */
+/* Static, Relative, Absolute, Fixed */
+/* Relative bisa menggeser sebuah element relatif terhadap posisi semula-nya  */
+/* Jika sebuah element diberikan position: relative dan memberi top, left, right, bottom nilai 0 maka element tersebut tidak akan bergerak diposisi semula-nya */
+/* Absolute */
+/* Ketika kita menggerakkan elemen dengan position:absolute maka ruang yang ditempati oleh element tersebut dianggap tidak ada */
+/* Ketika kita menggerakkan elemen dengan position:absolute maka element tersebut akan bergerak relatif terhadap posisi dari element parent-nya, selama element parent-nya memiliki posisi yang juga non-static */
+/* Fixed */
+/* Ketika kita menggerakkan elemen dengan position:fixed maka element tersebut akan bergerak relatif terhadap window browser-nya dan element tersebut akan terkunci terhadap window browser nya */
+/* Z-Index */
+/* Z-Index digunakan untuk mengatur tumpukan dari element ketika kita kasih element nya non-static */
+
+body {
+    height: 2000px;
+}
+
+/* div {
+    width: 200px;
+    height: 200px;
+    margin: auto;
+}
+
+.container {
+    width: 600px;
+    height: 650px;
+    border: 10px solid green;
+    position: relative;
+}
+
+.satu {
+    background-color: aqua;
+}
+
+.dua {
+    background-color: blue;
+    position: fixed;
+    width: 100%;
+    height: 40px;
+    top: 0;
+    left: 0;
+}
+
+.tiga {
+    background-color: darkslateblue;
+} */
+
+.one {
+    width: 200px;
+    height: 200px;
+    background-color: yellow;
+    position: absolute;
+    z-index: -10;
+}
+
+.two {
+    width: 200px;
+    height: 200px;
+    background-color: lightskyblue;
+    position: absolute;
+    top: 100px;
+    left: 100px;
+    z-index: 3;
+}
+
+.three {
+    width: 200px;
+    height: 200px;
+    background-color: red;
+    position: absolute;
+    top: 200px;
+    left: 200px;
+}
