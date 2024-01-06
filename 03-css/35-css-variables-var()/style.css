@@ -1,0 +1,71 @@
+/* CSS Variables Var() */
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;400&display=swap');
+
+:root {
+    --text-color: #333;
+    --container-bg: #B1C9EF;
+    --bg-color: white;
+    --heading-color: #333;
+
+    --box-padding: 0;
+    --box-color: #FF8C69;
+}
+
+html[data-color-mode='dark'] {
+    --text-color: white;
+    --container-bg: #555;
+    --bg-color: #333;
+    --heading-color: #B1C9EF;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Nunito, sans-serif;
+    font-size: 1.4rem;
+    line-height: 1.6;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+}
+
+.container {
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: var(--container-bg);
+    padding: 2em;
+    text-align: justify;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3rem;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 0.6rem;
+    line-height: 1;
+    color: var(--heading-color);
+}
+
+h1 span {
+    font-weight: 300;
+    font-size: 1.8rem;
+    margin: 0;
+}
+
+button {
+    display: block;
+    margin: 50px auto 0;
+    /* padding: var(--box-padding); */
+}
+
+.box {
+    /* --box-padding: 0; */
+    width: 20px;
+    height: 20px;
+    background-color: var(--box-color);
+    margin: auto;
+    padding: var(--box-padding);
+}

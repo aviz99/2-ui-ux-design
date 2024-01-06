@@ -50,7 +50,6 @@ div {
     margin-right: auto;
 } */
 
-
 /* Padding */
 /* Padding tidak bisa diberi nilai negatif (-) */
 /* Padding tidak punya nilai auto */
@@ -60,6 +59,7 @@ div {
 /* 2 nilai = padding: top-bottom left-right */
 /* 3 nilai = padding: top left-right bottom */
 /* 4 nilai = padding: top right bottom left */
+
 /* Border */
 /* Border menambah / mempengaruhi ukuran element */
 /* Total Dimensi = Width/Height + Padding + Border */
